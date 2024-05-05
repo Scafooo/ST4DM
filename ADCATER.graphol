@@ -1,0 +1,3259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphol version="3">
+  <project version="1.0" name="ADCATER">
+    <ontology iri="ADCATERPersonal_Nutrition_Profile" addLabelFromUserInput="0" lang="en" addLabelFromSimpleName="0">
+      <imports/>
+      <prefixes>
+        <prefix>
+          <value></value>
+          <namespace>ADCATER</namespace>
+        </prefix>
+        <prefix>
+          <value>owl</value>
+          <namespace>http://www.w3.org/2002/07/owl#</namespace>
+        </prefix>
+        <prefix>
+          <value>rdf</value>
+          <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
+        </prefix>
+        <prefix>
+          <value>rdfs</value>
+          <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
+        </prefix>
+        <prefix>
+          <value>xml</value>
+          <namespace>http://www.w3.org/XML/1998/namespace</namespace>
+        </prefix>
+        <prefix>
+          <value>xsd</value>
+          <namespace>http://www.w3.org/2001/XMLSchema#</namespace>
+        </prefix>
+      </prefixes>
+      <datatypes>
+        <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+        <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</datatype>
+        <datatype>http://www.w3.org/2000/01/rdf-schema#Literal</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#NCName</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#NMTOKEN</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#Name</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#base64Binary</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#boolean</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#byte</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#dateTime</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#dateTimeStamp</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#float</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#hexBinary</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#int</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#integer</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#language</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#long</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#negativeInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#nonNegativeInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#nonPositiveInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#normalizedString</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#positiveInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#short</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#token</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedByte</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedInt</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedLong</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedShort</datatype>
+        <datatype>http://www.w3.org/2002/07/owl#rational</datatype>
+        <datatype>http://www.w3.org/2002/07/owl#real</datatype>
+      </datatypes>
+      <languages>
+        <language>de</language>
+        <language>en</language>
+        <language>es</language>
+        <language>fr</language>
+        <language>it</language>
+      </languages>
+      <facets>
+        <facet>http://www.w3.org/2001/XMLSchema#langRange</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#length</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxExclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxInclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxLength</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minExclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minInclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minLength</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#pattern</facet>
+      </facets>
+      <annotationProperties>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#backwardCompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#comment</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#isDefinedBy</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#label</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#backwardCompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#deprecated</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#incompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#priorVersion</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#versionInfo</annotationProperty>
+      </annotationProperties>
+      <iris>
+        <iri>
+          <value>ADCATERAPI</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERAcute_Disease</value>
+        </iri>
+        <iri>
+          <value>ADCATERAppetite_Assessment</value>
+        </iri>
+        <iri>
+          <value>ADCATERAssessment</value>
+        </iri>
+        <iri>
+          <value>ADCATERBMI</value>
+        </iri>
+        <iri>
+          <value>ADCATERExit_stool</value>
+        </iri>
+        <iri>
+          <value>ADCATERFinished</value>
+        </iri>
+        <iri>
+          <value>ADCATERFood_Item</value>
+        </iri>
+        <iri>
+          <value>ADCATERGLIM</value>
+        </iri>
+        <iri>
+          <value>ADCATERHeat</value>
+        </iri>
+        <iri>
+          <value>ADCATERHeight</value>
+        </iri>
+        <iri>
+          <value>ADCATERHospital</value>
+        </iri>
+        <iri>
+          <value>ADCATERHospitalization</value>
+        </iri>
+        <iri>
+          <value>ADCATERIngredient</value>
+        </iri>
+        <iri>
+          <value>ADCATERKcals</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERMeal</value>
+        </iri>
+        <iri>
+          <value>ADCATERMeal_Assignment</value>
+        </iri>
+        <iri>
+          <value>ADCATERMeasurement</value>
+        </iri>
+        <iri>
+          <value>ADCATERMed_staff_diagnosis</value>
+        </iri>
+        <iri>
+          <value>ADCATERMedical_Status</value>
+        </iri>
+        <iri>
+          <value>ADCATERMedical_food_item</value>
+        </iri>
+        <iri>
+          <value>ADCATERMobility</value>
+        </iri>
+        <iri>
+          <value>ADCATERMuscle_Mass</value>
+        </iri>
+        <iri>
+          <value>ADCATERNeuropsychological</value>
+        </iri>
+        <iri>
+          <value>ADCATERNursing_Staff_Inquiries</value>
+        </iri>
+        <iri>
+          <value>ADCATERNutrition_Plan</value>
+        </iri>
+        <iri>
+          <value>ADCATERNutrition_Screening_and_Assessment</value>
+        </iri>
+        <iri>
+          <value>ADCATERPaper</value>
+        </iri>
+        <iri>
+          <value>ADCATERPatient</value>
+        </iri>
+        <iri>
+          <value>ADCATERPatient_Meal</value>
+        </iri>
+        <iri>
+          <value>ADCATERPersonal_Nutrition_Profile</value>
+        </iri>
+        <iri>
+          <value>ADCATERPhisical_Status</value>
+        </iri>
+        <iri>
+          <value>ADCATERPhysical_Examination</value>
+        </iri>
+        <iri>
+          <value>ADCATERPressure_Ulcer</value>
+        </iri>
+        <iri>
+          <value>ADCATERRoom</value>
+        </iri>
+        <iri>
+          <value>ADCATERSensory_Analysis</value>
+        </iri>
+        <iri>
+          <value>ADCATERServed_item</value>
+        </iri>
+        <iri>
+          <value>ADCATERSmell_test</value>
+        </iri>
+        <iri>
+          <value>ADCATERSpecial_Meal</value>
+        </iri>
+        <iri>
+          <value>ADCATERStick</value>
+        </iri>
+        <iri>
+          <value>ADCATERStrong_psychological_stress</value>
+        </iri>
+        <iri>
+          <value>ADCATERTaste_test</value>
+        </iri>
+        <iri>
+          <value>ADCATERWeight</value>
+        </iri>
+        <iri>
+          <value>ADCATERWeight_loss</value>
+        </iri>
+        <iri>
+          <value>ADCATERacute_illness_or_injury</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERadmission_in_structure</value>
+          <functional/>
+          <inverseFunctional/>
+        </iri>
+        <iri>
+          <value>ADCATERadmitted_to</value>
+        </iri>
+        <iri>
+          <value>ADCATERanalysis_refer_to_hospitalization</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERappetite_rating</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERassessment_fo_hospitalization</value>
+        </iri>
+        <iri>
+          <value>ADCATERassigned_meal</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERassociated_nutrition_plan</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERbelongs_to</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERbelow_50_perc_of_consumption_for_1_week</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERcarbohydrates</value>
+        </iri>
+        <iri>
+          <value>ADCATERchoosen_scent</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERconsumption</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERdaily_frequency</value>
+        </iri>
+        <iri>
+          <value>ADCATERdate</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERday</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERdecreased_food_consumption_last_3_months</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERdecreased_food_consumption_recently</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERdepth</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERdescreased_food_consumption_last_month</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERdescription</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERdiagnosis_for_hospitalization</value>
+        </iri>
+        <iri>
+          <value>ADCATERdrug</value>
+        </iri>
+        <iri>
+          <value>ADCATERend_day</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERenteral_feeding</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERexam_for_hospitalization</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERexpect_non_eating_for_more_than_5_days</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERfailure_to_eat_for_more_than_5_days</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERfat</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERfiber</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERfood_allergies</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERfood_enrichment</value>
+        </iri>
+        <iri>
+          <value>ADCATERfood_preference_negative</value>
+        </iri>
+        <iri>
+          <value>ADCATERfood_preference_positive</value>
+        </iri>
+        <iri>
+          <value>ADCATERfood_texture</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERgastro_intestinal_condition</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERgender</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERgrade</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERhas_ingredient</value>
+        </iri>
+        <iri>
+          <value>ADCATERhas_served_item</value>
+          <inverseFunctional/>
+        </iri>
+        <iri>
+          <value>ADCATERin_room</value>
+        </iri>
+        <iri>
+          <value>ADCATERindipendent_eating</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERinflammation_form_chronic_disease</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERintensity</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERis_served_in_meal</value>
+          <inverseFunctional/>
+        </iri>
+        <iri>
+          <value>ADCATERkind</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERlast_3_months</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERlast_6_moths</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERlast_month</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERlength</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERlevel</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERliquid_texture</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERlocation</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERmeal_item</value>
+        </iri>
+        <iri>
+          <value>ADCATERmeal_refers_to_hospitalization</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERmeasured</value>
+          <inverseFunctional/>
+        </iri>
+        <iri>
+          <value>ADCATERmedical_food</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERname</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERnumber</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERnumber_usual_of_meals</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERnutrition_convention</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERnutrition_plan_based_on_nutrition_screening</value>
+          <inverseFunctional/>
+        </iri>
+        <iri>
+          <value>ADCATERnutrition_plan_based_on_profile</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERordered_items</value>
+        </iri>
+        <iri>
+          <value>ADCATERoutcome</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERover_6_months</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERpatient_takes_drug</value>
+        </iri>
+        <iri>
+          <value>ADCATERpoor_consumption_for_more_then_2_weeks</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERpotassium</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERpresence_of_taste</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERproteins</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERrelated_to_hospitalization</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERscore</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERselected_from_available_meals</value>
+          <functional/>
+          <inverseFunctional/>
+        </iri>
+        <iri>
+          <value>ADCATERsense</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERsense_of_fullness</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERsmell_test_contains_sticks</value>
+        </iri>
+        <iri>
+          <value>ADCATERsodium</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERstart_day</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERtakes</value>
+        </iri>
+        <iri>
+          <value>ADCATERtaste_rating</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERtaste_test_contains_papers</value>
+        </iri>
+        <iri>
+          <value>ADCATERtimestamp</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERtype</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERvalue</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERvolume</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERvoluntary_choice</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERward</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERwater</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERweek</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERweight</value>
+          <functional/>
+        </iri>
+        <iri>
+          <value>ADCATERwidth</value>
+          <functional/>
+        </iri>
+      </iris>
+    </ontology>
+    <diagrams>
+      <diagram width="5000" height="5000" name="analysis_assessment">
+        <node color="#000000" id="n0" type="disjoint-union">
+          <geometry y="610" height="30" width="50" x="850"/>
+        </node>
+        <node color="#fcfcfc" id="n1" type="attribute">
+          <geometry y="360" height="20" width="20" x="1910"/>
+          <iri>ADCATERover_6_months</iri>
+          <label y="360" height="23" width="92" x="1970" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n10" type="attribute">
+          <geometry y="120" height="20" width="20" x="980"/>
+          <iri>ADCATERdecreased_food_consumption_last_3_months</iri>
+          <label y="120" height="23" width="254" x="1120" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n11" type="concept">
+          <geometry y="240" height="50" width="110" x="1700"/>
+          <iri>ADCATERWeight_loss</iri>
+          <label y="240" height="23" width="75" x="1700" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n12" type="range-restriction">
+          <geometry y="340" height="20" width="20" x="370"/>
+          <label y="340" height="23" width="39" x="340" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n13" type="domain-restriction">
+          <geometry y="330" height="20" width="20" x="760"/>
+          <label y="330" height="23" width="39" x="730" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n14" type="domain-restriction">
+          <geometry y="180" height="20" width="20" x="590"/>
+          <label y="180" height="23" width="39" x="620" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n15" type="concept">
+          <geometry y="250" height="50" width="110" x="370"/>
+          <iri>ADCATERHospitalization</iri>
+          <label y="250" height="23" width="91" x="370" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n16" type="concept">
+          <geometry y="240" height="50" width="140" x="1380"/>
+          <iri>ADCATERAppetite_Assessment</iri>
+          <label y="240" height="23" width="127" x="1380" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n17" type="domain-restriction">
+          <geometry y="520" height="20" width="20" x="370"/>
+          <label y="515" height="23" width="39" x="340" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n18" type="role">
+          <geometry y="870" height="50" width="70" x="740"/>
+          <iri>ADCATERtaste_test_contains_papers</iri>
+          <label y="830" height="23" width="156" x="655" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n19" type="concept">
+          <geometry y="520" height="50" width="110" x="850"/>
+          <iri>ADCATERSensory_Analysis</iri>
+          <label y="520" height="23" width="104" x="850" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n2" type="domain-restriction">
+          <geometry y="340" height="20" width="20" x="1340"/>
+          <label y="340" height="23" width="39" x="1310" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n20" type="range-restriction">
+          <geometry y="-40" height="20" width="20" x="870"/>
+          <label y="-20" height="23" width="39" x="870" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n21" type="domain-restriction">
+          <geometry y="250" height="20" width="20" x="1010"/>
+          <label y="225" height="23" width="39" x="1010" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n22" type="concept">
+          <geometry y="-40" height="50" width="110" x="1150"/>
+          <iri>ADCATERAssessment</iri>
+          <label y="-40" height="23" width="77" x="1150" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n23" type="domain-restriction">
+          <geometry y="1100" height="20" width="20" x="780"/>
+          <label y="1100" height="23" width="39" x="810" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n24" type="role">
+          <geometry y="250" height="50" width="70" x="590"/>
+          <iri>ADCATERnutrition_plan_based_on_nutrition_screening</iri>
+          <label y="300" height="23" width="247" x="555" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n25" type="attribute">
+          <geometry y="1030" height="20" width="20" x="570"/>
+          <iri>ADCATERkind</iri>
+          <label y="1030" height="23" width="33" x="540" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n26" type="domain-restriction">
+          <geometry y="180" height="20" width="20" x="970"/>
+          <label y="155" height="23" width="39" x="970" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n27" type="domain-restriction">
+          <geometry y="300" height="20" width="20" x="1440"/>
+          <label y="295" height="23" width="39" x="1470" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n28" type="role">
+          <geometry y="870" height="50" width="70" x="960"/>
+          <iri>ADCATERsmell_test_contains_sticks</iri>
+          <label y="830" height="23" width="153" x="875" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n29" type="attribute">
+          <geometry y="-150" height="20" width="20" x="1150"/>
+          <iri>ADCATERtimestamp</iri>
+          <label y="-150" height="23" width="68" x="1205" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n3" type="attribute">
+          <geometry y="510" height="20" width="20" x="1500"/>
+          <iri>ADCATERbelow_50_perc_of_consumption_for_1_week</iri>
+          <label y="525" height="23" width="247" x="1375" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n30" type="attribute">
+          <geometry y="160" height="20" width="20" x="1910"/>
+          <iri>ADCATERvoluntary_choice</iri>
+          <label y="160" height="23" width="100" x="1970" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n31" type="attribute">
+          <geometry y="1140" height="20" width="20" x="710"/>
+          <iri>ADCATERintensity</iri>
+          <label y="1140" height="23" width="55" x="670" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n32" type="domain-restriction">
+          <geometry y="330" height="20" width="20" x="820"/>
+          <label y="330" height="23" width="39" x="790" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n33" type="disjoint-union">
+          <geometry y="30" height="30" width="50" x="1150"/>
+        </node>
+        <node color="#fcfcfc" id="n34" type="domain-restriction">
+          <geometry y="800" height="20" width="20" x="740"/>
+          <label y="800" height="23" width="39" x="705" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n35" type="domain-restriction">
+          <geometry y="450" height="20" width="20" x="1670"/>
+          <label y="450" height="23" width="39" x="1700" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n36" type="domain-restriction">
+          <geometry y="470" height="20" width="20" x="1630"/>
+          <label y="470" height="23" width="39" x="1600" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n37" type="attribute">
+          <geometry y="500" height="20" width="20" x="1440"/>
+          <iri>ADCATERinflammation_form_chronic_disease</iri>
+          <label y="500" height="23" width="204" x="1330" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n38" type="domain-restriction">
+          <geometry y="330" height="20" width="20" x="940"/>
+          <label y="330" height="23" width="39" x="970" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n39" type="concept">
+          <geometry y="252" height="55" width="220" x="860"/>
+          <iri>ADCATERNutrition_Screening_and_Assessment</iri>
+          <label y="250" height="23" width="212" x="860" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n4" type="domain-restriction">
+          <geometry y="210" height="20" width="20" x="1860"/>
+          <label y="185" height="23" width="39" x="1860" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n40" type="attribute">
+          <geometry y="400" height="20" width="20" x="1380"/>
+          <iri>ADCATERnumber_usual_of_meals</iri>
+          <label y="420" height="23" width="140" x="1380" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n41" type="domain-restriction">
+          <geometry y="470" height="20" width="20" x="1500"/>
+          <label y="470" height="23" width="39" x="1470" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n42" type="domain-restriction">
+          <geometry y="1090" height="20" width="20" x="620"/>
+          <label y="1065" height="23" width="39" x="620" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n43" type="domain-restriction">
+          <geometry y="360" height="20" width="20" x="1380"/>
+          <label y="360" height="23" width="39" x="1410" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n44" type="attribute">
+          <geometry y="1140" height="20" width="20" x="780"/>
+          <iri>ADCATERsense</iri>
+          <label y="1140" height="23" width="42" x="820" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n45" type="domain-restriction">
+          <geometry y="1100" height="20" width="20" x="960"/>
+          <label y="1100" height="23" width="39" x="990" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n46" type="attribute">
+          <geometry y="380" height="20" width="20" x="1340"/>
+          <iri>ADCATERsense_of_fullness</iri>
+          <label y="395" height="23" width="106" x="1285" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n47" type="range-restriction">
+          <geometry y="250" height="20" width="20" x="700"/>
+          <label y="275" height="23" width="39" x="700" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n48" type="concept">
+          <geometry y="690" height="50" width="110" x="740"/>
+          <iri>ADCATERTaste_test</iri>
+          <label y="690" height="23" width="66" x="740" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n49" type="domain-restriction">
+          <geometry y="-50" height="20" width="20" x="1260"/>
+          <label y="-75" height="23" width="39" x="1260" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n5" type="attribute">
+          <geometry y="1090" height="20" width="20" x="570"/>
+          <iri>ADCATERpresence_of_taste</iri>
+          <label y="1090" height="23" width="108" x="500" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n50" type="concept">
+          <geometry y="690" height="50" width="110" x="960"/>
+          <iri>ADCATERSmell_test</iri>
+          <label y="690" height="23" width="66" x="960" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n51" type="attribute">
+          <geometry y="370" height="20" width="20" x="760"/>
+          <iri>ADCATERenteral_feeding</iri>
+          <label y="370" height="23" width="92" x="700" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n52" type="attribute">
+          <geometry y="340" height="20" width="20" x="1440"/>
+          <iri>ADCATERtaste_rating</iri>
+          <label y="340" height="23" width="73" x="1490" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n53" type="domain-restriction">
+          <geometry y="360" height="20" width="20" x="1860"/>
+          <label y="335" height="23" width="39" x="1860" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n54" type="attribute">
+          <geometry y="310" height="20" width="20" x="1910"/>
+          <iri>ADCATERlast_6_moths</iri>
+          <label y="310" height="23" width="82" x="1965" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n55" type="attribute">
+          <geometry y="340" height="20" width="20" x="1270"/>
+          <iri>ADCATERappetite_rating</iri>
+          <label y="340" height="23" width="90" x="1210" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n56" type="range-restriction">
+          <geometry y="940" height="20" width="20" x="960"/>
+          <label y="940" height="23" width="39" x="930" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n57" type="domain-restriction">
+          <geometry y="490" height="20" width="20" x="1550"/>
+          <label y="490" height="23" width="39" x="1580" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n58" type="attribute">
+          <geometry y="210" height="20" width="20" x="1910"/>
+          <iri>ADCATERlast_month</iri>
+          <label y="210" height="23" width="70" x="1960" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n59" type="domain-restriction">
+          <geometry y="360" height="20" width="20" x="890"/>
+          <label y="355" height="23" width="39" x="860" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n6" type="attribute">
+          <geometry y="530" height="20" width="20" x="1550"/>
+          <iri>ADCATERpoor_consumption_for_more_then_2_weeks</iri>
+          <label y="550" height="23" width="244" x="1440" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n60" type="range-restriction">
+          <geometry y="940" height="20" width="20" x="740"/>
+          <label y="940" height="23" width="39" x="710" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n61" type="domain-restriction">
+          <geometry y="260" height="20" width="20" x="1860"/>
+          <label y="235" height="23" width="39" x="1860" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n62" type="domain-restriction">
+          <geometry y="1030" height="20" width="20" x="620"/>
+          <label y="1005" height="23" width="39" x="620" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n63" type="domain-restriction">
+          <geometry y="1100" height="20" width="20" x="710"/>
+          <label y="1100" height="23" width="39" x="680" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n64" type="attribute">
+          <geometry y="370" height="20" width="20" x="940"/>
+          <iri>ADCATERdecreased_food_consumption_recently</iri>
+          <label y="370" height="23" width="219" x="1060" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n65" type="attribute">
+          <geometry y="510" height="20" width="20" x="1630"/>
+          <iri>ADCATERgastro_intestinal_condition</iri>
+          <label y="535" height="23" width="154" x="1690" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n66" type="concept">
+          <geometry y="1030" height="50" width="110" x="960"/>
+          <iri>ADCATERStick</iri>
+          <label y="1030" height="23" width="37" x="960" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n67" type="domain-restriction">
+          <geometry y="120" height="20" width="20" x="930"/>
+          <label y="95" height="23" width="39" x="930" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n68" type="domain-restriction">
+          <geometry y="800" height="20" width="20" x="960"/>
+          <label y="800" height="23" width="39" x="925" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n69" type="attribute">
+          <geometry y="180" height="20" width="20" x="1020"/>
+          <iri>ADCATERdescreased_food_consumption_last_month</iri>
+          <label y="180" height="23" width="242" x="1155" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n7" type="attribute">
+          <geometry y="370" height="20" width="20" x="820"/>
+          <iri>ADCATERmedical_food</iri>
+          <label y="385" height="23" width="83" x="815" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n70" type="concept">
+          <geometry y="390" height="50" width="110" x="1550"/>
+          <iri>ADCATERGLIM</iri>
+          <label y="390" height="23" width="39" x="1550" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n71" type="attribute">
+          <geometry y="250" height="20" width="20" x="1060"/>
+          <iri>ADCATERfailure_to_eat_for_more_than_5_days</iri>
+          <label y="250" height="23" width="207" x="1180" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n72" type="domain-restriction">
+          <geometry y="460" height="20" width="20" x="1440"/>
+          <label y="460" height="23" width="39" x="1410" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n73" type="role">
+          <geometry y="-40" height="50" width="70" x="790"/>
+          <iri>ADCATERassessment_fo_hospitalization</iri>
+          <label y="-75" height="23" width="175" x="795" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n74" type="domain-restriction">
+          <geometry y="310" height="20" width="20" x="1860"/>
+          <label y="285" height="23" width="39" x="1860" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n75" type="domain-restriction">
+          <geometry y="-110" height="20" width="20" x="1150"/>
+          <label y="-110" height="23" width="39" x="1180" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n76" type="domain-restriction">
+          <geometry y="300" height="20" width="20" x="1270"/>
+          <label y="275" height="23" width="39" x="1270" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n77" type="concept">
+          <geometry y="1030" height="50" width="110" x="740"/>
+          <iri>ADCATERPaper</iri>
+          <label y="1030" height="23" width="42" x="740" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n78" type="attribute">
+          <geometry y="400" height="20" width="20" x="890"/>
+          <iri>ADCATERexpect_non_eating_for_more_than_5_days</iri>
+          <label y="420" height="23" width="235" x="900" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n79" type="domain-restriction">
+          <geometry y="-40" height="20" width="20" x="700"/>
+          <label y="-20" height="23" width="39" x="700" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n8" type="domain-restriction">
+          <geometry y="160" height="20" width="20" x="1860"/>
+          <label y="135" height="23" width="39" x="1860" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n80" type="attribute">
+          <geometry y="1140" height="20" width="20" x="960"/>
+          <iri>ADCATERchoosen_scent</iri>
+          <label y="1140" height="23" width="91" x="1015" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n81" type="attribute">
+          <geometry y="260" height="20" width="20" x="1910"/>
+          <iri>ADCATERlast_3_months</iri>
+          <label y="260" height="23" width="88" x="1970" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n82" type="attribute">
+          <geometry y="490" height="20" width="20" x="1670"/>
+          <iri>ADCATERacute_illness_or_injury</iri>
+          <label y="490" height="23" width="130" x="1750" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n83" type="role">
+          <geometry y="420" height="50" width="70" x="370"/>
+          <iri>ADCATERanalysis_refer_to_hospitalization</iri>
+          <label y="440" height="23" width="184" x="485" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n84" type="concept">
+          <geometry y="70" height="50" width="110" x="590"/>
+          <iri>ADCATERNutrition_Plan</iri>
+          <label y="70" height="23" width="86" x="590" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n9" type="attribute">
+          <geometry y="-50" height="20" width="20" x="1310"/>
+          <iri>ADCATERscore</iri>
+          <label y="-50" height="23" width="40" x="1340" size="12" customSize="0"/>
+        </node>
+        <edge source="n48" target="n0" id="e0" type="input">
+          <point y="690" x="740"/>
+          <point y="610" x="740"/>
+          <point y="610" x="850"/>
+        </edge>
+        <edge source="n50" target="n0" id="e1" type="input">
+          <point y="690" x="960"/>
+          <point y="610" x="960"/>
+          <point y="610" x="850"/>
+        </edge>
+        <edge source="n6" target="n57" id="e10" type="input">
+          <point y="530" x="1550"/>
+          <point y="490" x="1550"/>
+        </edge>
+        <edge source="n7" target="n32" id="e11" type="input">
+          <point y="370" x="820"/>
+          <point y="330" x="820"/>
+        </edge>
+        <edge source="n11" target="n8" id="e12" type="equivalence">
+          <point y="240" x="1700"/>
+          <point y="160" x="1860"/>
+        </edge>
+        <edge source="n30" target="n8" id="e13" type="input">
+          <point y="160" x="1910"/>
+          <point y="160" x="1860"/>
+        </edge>
+        <edge source="n9" target="n49" id="e14" type="input">
+          <point y="-50" x="1310"/>
+          <point y="-50" x="1260"/>
+        </edge>
+        <edge source="n10" target="n67" id="e15" type="input">
+          <point y="120" x="980"/>
+          <point y="120" x="930"/>
+        </edge>
+        <edge source="n11" target="n61" id="e16" type="equivalence">
+          <point y="240" x="1700"/>
+          <point y="260" x="1860"/>
+        </edge>
+        <edge source="n11" target="n74" id="e17" type="equivalence">
+          <point y="240" x="1700"/>
+          <point y="310" x="1860"/>
+        </edge>
+        <edge source="n11" target="n53" id="e18" type="equivalence">
+          <point y="240" x="1700"/>
+          <point y="360" x="1860"/>
+        </edge>
+        <edge source="n11" target="n33" id="e19" type="input">
+          <point y="240" x="1700"/>
+          <point y="30" x="1700"/>
+          <point y="30" x="1150"/>
+        </edge>
+        <edge source="n0" target="n19" id="e2" type="inclusion">
+          <point y="610" x="850"/>
+          <point y="520" x="850"/>
+        </edge>
+        <edge source="n12" target="n15" id="e20" type="equivalence">
+          <point y="340" x="370"/>
+          <point y="250" x="370"/>
+        </edge>
+        <edge source="n83" target="n12" id="e21" type="input">
+          <point y="420" x="370"/>
+          <point y="340" x="370"/>
+        </edge>
+        <edge source="n13" target="n39" id="e22" type="equivalence">
+          <point y="330" x="760"/>
+          <point y="279" x="760"/>
+        </edge>
+        <edge source="n51" target="n13" id="e23" type="input">
+          <point y="370" x="760"/>
+          <point y="330" x="760"/>
+        </edge>
+        <edge source="n24" target="n14" id="e24" type="input">
+          <point y="250" x="590"/>
+          <point y="180" x="590"/>
+        </edge>
+        <edge source="n43" target="n16" id="e26" type="equivalence">
+          <point y="360" x="1380"/>
+          <point y="240" x="1380"/>
+        </edge>
+        <edge source="n16" target="n33" id="e27" type="input">
+          <point y="240" x="1380"/>
+          <point y="30" x="1380"/>
+          <point y="30" x="1150"/>
+        </edge>
+        <edge source="n27" target="n16" id="e28" type="equivalence">
+          <point y="300" x="1440"/>
+          <point y="240" x="1380"/>
+        </edge>
+        <edge source="n76" target="n16" id="e29" type="equivalence">
+          <point y="300" x="1270"/>
+          <point y="240" x="1380"/>
+        </edge>
+        <edge source="n1" target="n53" id="e3" type="input">
+          <point y="360" x="1910"/>
+          <point y="360" x="1860"/>
+        </edge>
+        <edge source="n83" target="n17" id="e30" type="input">
+          <point y="420" x="370"/>
+          <point y="520" x="370"/>
+        </edge>
+        <edge source="n18" target="n34" id="e32" type="input">
+          <point y="870" x="740"/>
+          <point y="800" x="740"/>
+        </edge>
+        <edge source="n18" target="n60" id="e33" type="input">
+          <point y="870" x="740"/>
+          <point y="940" x="740"/>
+        </edge>
+        <edge source="n73" target="n20" id="e34" type="input">
+          <point y="-40" x="790"/>
+          <point y="-40" x="870"/>
+        </edge>
+        <edge source="n20" target="n22" id="e35" type="equivalence">
+          <point y="-40" x="870"/>
+          <point y="-40" x="1150"/>
+        </edge>
+        <edge source="n71" target="n21" id="e36" type="input">
+          <point y="250" x="1060"/>
+          <point y="250" x="1010"/>
+        </edge>
+        <edge source="n21" target="n39" id="e37" type="equivalence">
+          <point y="250" x="1010"/>
+          <point y="252" x="860"/>
+        </edge>
+        <edge source="n22" target="n49" id="e38" type="equivalence">
+          <point y="-50" x="1204"/>
+          <point y="-50" x="1260"/>
+        </edge>
+        <edge source="n46" target="n2" id="e4" type="input">
+          <point y="380" x="1340"/>
+          <point y="340" x="1340"/>
+        </edge>
+        <edge source="n33" target="n22" id="e40" type="inclusion">
+          <point y="30" x="1150"/>
+          <point y="-40" x="1150"/>
+        </edge>
+        <edge source="n44" target="n23" id="e41" type="input">
+          <point y="1140" x="780"/>
+          <point y="1100" x="780"/>
+        </edge>
+        <edge source="n77" target="n23" id="e42" type="equivalence">
+          <point y="1054" x="780"/>
+          <point y="1100" x="780"/>
+        </edge>
+        <edge source="n24" target="n47" id="e43" type="input">
+          <point y="250" x="590"/>
+          <point y="250" x="700"/>
+        </edge>
+        <edge source="n25" target="n62" id="e44" type="input">
+          <point y="1030" x="570"/>
+          <point y="1030" x="620"/>
+        </edge>
+        <edge source="n26" target="n39" id="e45" type="equivalence">
+          <point y="180" x="970"/>
+          <point y="252" x="860"/>
+        </edge>
+        <edge source="n69" target="n26" id="e46" type="input">
+          <point y="180" x="1020"/>
+          <point y="180" x="970"/>
+        </edge>
+        <edge source="n52" target="n27" id="e47" type="input">
+          <point y="340" x="1440"/>
+          <point y="300" x="1440"/>
+        </edge>
+        <edge source="n28" target="n68" id="e48" type="input">
+          <point y="870" x="960"/>
+          <point y="800" x="960"/>
+        </edge>
+        <edge source="n28" target="n56" id="e49" type="input">
+          <point y="870" x="960"/>
+          <point y="940" x="960"/>
+        </edge>
+        <edge source="n2" target="n16" id="e5" type="equivalence">
+          <point y="340" x="1340"/>
+          <point y="264" x="1340"/>
+        </edge>
+        <edge source="n29" target="n75" id="e50" type="input">
+          <point y="-150" x="1150"/>
+          <point y="-110" x="1150"/>
+        </edge>
+        <edge source="n31" target="n63" id="e51" type="input">
+          <point y="1140" x="710"/>
+          <point y="1100" x="710"/>
+        </edge>
+        <edge source="n32" target="n39" id="e52" type="equivalence">
+          <point y="330" x="820"/>
+          <point y="279" x="820"/>
+        </edge>
+        <edge source="n39" target="n33" id="e53" type="input">
+          <point y="252" x="860"/>
+          <point y="30" x="860"/>
+          <point y="30" x="1150"/>
+        </edge>
+        <edge source="n70" target="n33" id="e54" type="input">
+          <point y="390" x="1550"/>
+          <point y="30" x="1550"/>
+          <point y="30" x="1150"/>
+        </edge>
+        <edge source="n48" target="n34" id="e55" type="equivalence">
+          <point y="690" x="740"/>
+          <point y="800" x="740"/>
+        </edge>
+        <edge source="n82" target="n35" id="e56" type="input">
+          <point y="490" x="1670"/>
+          <point y="450" x="1670"/>
+        </edge>
+        <edge source="n35" target="n70" id="e57" type="equivalence">
+          <point y="450" x="1670"/>
+          <point y="390" x="1550"/>
+        </edge>
+        <edge source="n36" target="n70" id="e58" type="equivalence">
+          <point y="470" x="1630"/>
+          <point y="390" x="1550"/>
+        </edge>
+        <edge source="n65" target="n36" id="e59" type="input">
+          <point y="510" x="1630"/>
+          <point y="470" x="1630"/>
+        </edge>
+        <edge source="n3" target="n41" id="e6" type="input">
+          <point y="510" x="1500"/>
+          <point y="470" x="1500"/>
+        </edge>
+        <edge source="n37" target="n72" id="e60" type="input">
+          <point y="500" x="1440"/>
+          <point y="460" x="1440"/>
+        </edge>
+        <edge source="n38" target="n39" id="e61" type="equivalence">
+          <point y="330" x="940"/>
+          <point y="279" x="940"/>
+        </edge>
+        <edge source="n64" target="n38" id="e62" type="input">
+          <point y="370" x="940"/>
+          <point y="330" x="940"/>
+        </edge>
+        <edge source="n47" target="n39" id="e63" type="equivalence">
+          <point y="250" x="700"/>
+          <point y="252" x="860"/>
+        </edge>
+        <edge source="n67" target="n39" id="e64" type="equivalence">
+          <point y="120" x="930"/>
+          <point y="252" x="860"/>
+        </edge>
+        <edge source="n59" target="n39" id="e65" type="equivalence">
+          <point y="360" x="890"/>
+          <point y="279" x="890"/>
+        </edge>
+        <edge source="n40" target="n43" id="e66" type="input">
+          <point y="400" x="1380"/>
+          <point y="360" x="1380"/>
+        </edge>
+        <edge source="n41" target="n70" id="e67" type="equivalence">
+          <point y="470" x="1500"/>
+          <point y="390" x="1550"/>
+        </edge>
+        <edge source="n42" target="n77" id="e68" type="equivalence">
+          <point y="1090" x="620"/>
+          <point y="1030" x="740"/>
+        </edge>
+        <edge source="n66" target="n45" id="e69" type="equivalence">
+          <point y="1030" x="960"/>
+          <point y="1100" x="960"/>
+        </edge>
+        <edge source="n58" target="n4" id="e7" type="input">
+          <point y="210" x="1910"/>
+          <point y="210" x="1860"/>
+        </edge>
+        <edge source="n80" target="n45" id="e70" type="input">
+          <point y="1140" x="960"/>
+          <point y="1100" x="960"/>
+        </edge>
+        <edge source="n50" target="n68" id="e71" type="equivalence">
+          <point y="690" x="960"/>
+          <point y="800" x="960"/>
+        </edge>
+        <edge source="n54" target="n74" id="e72" type="input">
+          <point y="310" x="1910"/>
+          <point y="310" x="1860"/>
+        </edge>
+        <edge source="n55" target="n76" id="e73" type="input">
+          <point y="340" x="1270"/>
+          <point y="300" x="1270"/>
+        </edge>
+        <edge source="n56" target="n66" id="e74" type="equivalence">
+          <point y="940" x="960"/>
+          <point y="1030" x="960"/>
+        </edge>
+        <edge source="n57" target="n70" id="e75" type="equivalence">
+          <point y="490" x="1550"/>
+          <point y="390" x="1550"/>
+        </edge>
+        <edge source="n78" target="n59" id="e76" type="input">
+          <point y="400" x="890"/>
+          <point y="360" x="890"/>
+        </edge>
+        <edge source="n81" target="n61" id="e77" type="input">
+          <point y="260" x="1910"/>
+          <point y="260" x="1860"/>
+        </edge>
+        <edge source="n62" target="n77" id="e78" type="equivalence">
+          <point y="1030" x="620"/>
+          <point y="1030" x="740"/>
+        </edge>
+        <edge source="n77" target="n63" id="e79" type="equivalence">
+          <point y="1054" x="710"/>
+          <point y="1100" x="710"/>
+        </edge>
+        <edge source="n11" target="n4" id="e8" type="equivalence">
+          <point y="240" x="1700"/>
+          <point y="210" x="1860"/>
+        </edge>
+        <edge source="n72" target="n70" id="e80" type="equivalence">
+          <point y="460" x="1440"/>
+          <point y="390" x="1550"/>
+        </edge>
+        <edge source="n73" target="n79" id="e81" type="input">
+          <point y="-40" x="790"/>
+          <point y="-40" x="700"/>
+        </edge>
+        <edge source="n60" target="n77" id="e82" type="equivalence">
+          <point y="940" x="740"/>
+          <point y="1030" x="740"/>
+        </edge>
+        <edge source="n19" target="n17" id="e83" type="equivalence">
+          <point y="520" x="850"/>
+          <point y="520" x="370"/>
+        </edge>
+        <edge source="n15" target="n79" id="e85" type="equivalence">
+          <point y="250" x="370"/>
+          <point y="-40" x="370"/>
+          <point y="-40" x="700"/>
+        </edge>
+        <edge source="n14" target="n84" id="e86" type="equivalence">
+          <point y="180" x="590"/>
+          <point y="70" x="590"/>
+        </edge>
+        <edge source="n5" target="n42" id="e9" type="input">
+          <point y="1090" x="570"/>
+          <point y="1090" x="620"/>
+        </edge>
+        <edge source="n22" target="n75" id="e92" type="inclusion">
+          <point y="-40" x="1150"/>
+          <point y="-110" x="1150"/>
+        </edge>
+      </diagram>
+      <diagram width="5000" height="5000" name="measurements_diagnosis_examinations">
+        <node color="#fcfcfc" id="n0" type="attribute">
+          <geometry y="750" height="20" width="20" x="580"/>
+          <iri>ADCATERvalue</iri>
+          <label y="770" height="23" width="39" x="580" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n1" type="domain-restriction">
+          <geometry y="790" height="20" width="20" x="230"/>
+          <label y="790" height="23" width="39" x="245" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n10" type="concept">
+          <geometry y="630" height="50" width="110" x="790"/>
+          <iri>ADCATERHeight</iri>
+          <label y="630" height="23" width="45" x="790" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n11" type="domain-restriction">
+          <geometry y="710" height="20" width="20" x="990"/>
+          <label y="710" height="23" width="39" x="1020" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n12" type="attribute">
+          <geometry y="830" height="20" width="20" x="140"/>
+          <iri>ADCATERlocation</iri>
+          <label y="850" height="23" width="53" x="140" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n13" type="attribute">
+          <geometry y="750" height="20" width="20" x="1250"/>
+          <iri>ADCATERvalue</iri>
+          <label y="770" height="23" width="39" x="1250" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n14" type="concept">
+          <geometry y="230" height="50" width="110" x="790"/>
+          <iri>ADCATERMeasurement</iri>
+          <label y="230" height="23" width="84" x="790" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n15" type="concept">
+          <geometry y="230" height="50" width="140" x="20"/>
+          <iri>ADCATERMed_staff_diagnosis</iri>
+          <label y="230" height="23" width="121" x="20" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n16" type="concept">
+          <geometry y="430" height="50" width="110" x="470"/>
+          <iri>ADCATERMedical_Status</iri>
+          <label y="430" height="23" width="92" x="470" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n17" type="domain-restriction">
+          <geometry y="330" height="20" width="20" x="280"/>
+          <label y="310" height="23" width="39" x="280" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n18" type="disjoint-union">
+          <geometry y="520" height="30" width="50" x="470"/>
+        </node>
+        <node color="#fcfcfc" id="n19" type="role">
+          <geometry y="230" height="50" width="70" x="210"/>
+          <iri>ADCATERdiagnosis_for_hospitalization</iri>
+          <label y="270" height="23" width="166" x="210" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n2" type="attribute">
+          <geometry y="780" height="20" width="20" x="280"/>
+          <iri>ADCATERgrade</iri>
+          <label y="800" height="23" width="41" x="280" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n20" type="concept">
+          <geometry y="630" height="50" width="110" x="1250"/>
+          <iri>ADCATERMuscle_Mass</iri>
+          <label y="630" height="23" width="84" x="1250" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n21" type="role">
+          <geometry y="230" height="50" width="70" x="600"/>
+          <iri>ADCATERmeasured</iri>
+          <label y="200" height="23" width="64" x="600" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n22" type="range-restriction">
+          <geometry y="120" height="20" width="20" x="130"/>
+          <label y="98" height="23" width="39" x="130" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n23" type="domain-restriction">
+          <geometry y="230" height="20" width="20" x="280"/>
+          <label y="208" height="23" width="39" x="280" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n24" type="domain-restriction">
+          <geometry y="120" height="20" width="20" x="280"/>
+          <label y="98" height="23" width="39" x="280" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n25" type="concept">
+          <geometry y="330" height="50" width="110" x="-130"/>
+          <iri>ADCATERAcute_Disease</iri>
+          <label y="330" height="23" width="89" x="-130" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n26" type="domain-restriction">
+          <geometry y="700" height="20" width="20" x="-10"/>
+          <label y="700" height="23" width="39" x="20" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n27" type="attribute">
+          <geometry y="750" height="20" width="20" x="380"/>
+          <iri>ADCATERdaily_frequency</iri>
+          <label y="770" height="23" width="93" x="380" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n28" type="concept">
+          <geometry y="332" height="55" width="115" x="172"/>
+          <iri>ADCATERNeuropsychological</iri>
+          <label y="330" height="23" width="116" x="170" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n29" type="attribute">
+          <geometry y="740" height="20" width="20" x="-220"/>
+          <iri>ADCATERvalue</iri>
+          <label y="760" height="23" width="39" x="-220" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n3" type="domain-restriction">
+          <geometry y="700" height="20" width="20" x="-220"/>
+          <label y="700" height="23" width="39" x="-190" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n30" type="domain-restriction">
+          <geometry y="690" height="20" width="20" x="310"/>
+          <label y="670" height="23" width="39" x="310" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n31" type="attribute">
+          <geometry y="230" height="20" width="20" x="950"/>
+          <iri>ADCATERtimestamp</iri>
+          <label y="230" height="23" width="68" x="995" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n32" type="concept">
+          <geometry y="630" height="50" width="110" x="580"/>
+          <iri>ADCATERHeat</iri>
+          <label y="630" height="23" width="36" x="580" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n33" type="concept">
+          <geometry y="630" height="50" width="110" x="-220"/>
+          <iri>ADCATERWeight</iri>
+          <label y="630" height="23" width="47" x="-220" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n34" type="attribute">
+          <geometry y="740" height="20" width="20" x="-10"/>
+          <iri>ADCATERvalue</iri>
+          <label y="760" height="23" width="39" x="-10" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n35" type="concept">
+          <geometry y="630" height="50" width="110" x="-10"/>
+          <iri>ADCATERBMI</iri>
+          <label y="630" height="23" width="32" x="-10" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n36" type="attribute">
+          <geometry y="750" height="20" width="20" x="90"/>
+          <iri>ADCATERdescription</iri>
+          <label y="770" height="23" width="70" x="90" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n37" type="role">
+          <geometry y="120" height="50" width="70" x="210"/>
+          <iri>ADCATERexam_for_hospitalization</iri>
+          <label y="160" height="23" width="144" x="205" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n38" type="concept">
+          <geometry y="700" height="50" width="110" x="190"/>
+          <iri>ADCATERPressure_Ulcer</iri>
+          <label y="700" height="23" width="90" x="190" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n39" type="concept">
+          <geometry y="630" height="50" width="110" x="380"/>
+          <iri>ADCATERExit_stool</iri>
+          <label y="630" height="23" width="62" x="380" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n4" type="domain-restriction">
+          <geometry y="120" height="20" width="20" x="-90"/>
+          <label y="95" height="23" width="39" x="-90" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n40" type="domain-restriction">
+          <geometry y="790" height="20" width="20" x="140"/>
+          <label y="795" height="23" width="39" x="110" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n41" type="attribute">
+          <geometry y="750" height="20" width="20" x="990"/>
+          <iri>ADCATERlevel</iri>
+          <label y="770" height="23" width="35" x="990" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n42" type="range-restriction">
+          <geometry y="230" height="20" width="20" x="130"/>
+          <label y="208" height="23" width="39" x="130" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n43" type="disjoint-union">
+          <geometry y="530" height="30" width="50" x="1130"/>
+        </node>
+        <node color="#fcfcfc" id="n44" type="domain-restriction">
+          <geometry y="790" height="20" width="20" x="190"/>
+          <label y="790" height="23" width="39" x="175" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n45" type="domain-restriction">
+          <geometry y="230" height="20" width="20" x="520"/>
+          <label y="208" height="23" width="39" x="520" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n46" type="domain-restriction">
+          <geometry y="730" height="20" width="20" x="280"/>
+          <label y="710" height="23" width="39" x="280" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n47" type="domain-restriction">
+          <geometry y="710" height="20" width="20" x="580"/>
+          <label y="710" height="23" width="39" x="610" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n48" type="concept">
+          <geometry y="630" height="50" width="110" x="990"/>
+          <iri>ADCATERMobility</iri>
+          <label y="630" height="23" width="53" x="990" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n49" type="range-restriction">
+          <geometry y="230" height="20" width="20" x="680"/>
+          <label y="208" height="23" width="39" x="680" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n5" type="attribute">
+          <geometry y="750" height="20" width="20" x="310"/>
+          <iri>ADCATERlength</iri>
+          <label y="770" height="23" width="44" x="310" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n50" type="domain-restriction">
+          <geometry y="230" height="20" width="20" x="900"/>
+          <label y="208" height="23" width="39" x="900" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n51" type="domain-restriction">
+          <geometry y="710" height="20" width="20" x="380"/>
+          <label y="710" height="23" width="39" x="410" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n52" type="concept">
+          <geometry y="122" height="55" width="130" x="25"/>
+          <iri>ADCATERPhysical_Examination</iri>
+          <label y="120" height="23" width="127" x="20" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n53" type="concept">
+          <geometry y="372" height="55" width="160" x="20"/>
+          <iri>ADCATERStrong_psychological_stress</iri>
+          <label y="370" height="23" width="162" x="20" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n54" type="domain-restriction">
+          <geometry y="700" height="20" width="20" x="90"/>
+          <label y="680" height="23" width="39" x="90" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n55" type="attribute">
+          <geometry y="750" height="20" width="20" x="790"/>
+          <iri>ADCATERvalue</iri>
+          <label y="770" height="23" width="39" x="790" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n56" type="attribute">
+          <geometry y="120" height="20" width="20" x="-150"/>
+          <iri>ADCATERdescription</iri>
+          <label y="98" height="23" width="70" x="-150" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n57" type="concept">
+          <geometry y="420" height="50" width="110" x="1130"/>
+          <iri>ADCATERPhisical_Status</iri>
+          <label y="420" height="23" width="92" x="1130" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n58" type="domain-restriction">
+          <geometry y="710" height="20" width="20" x="1250"/>
+          <label y="710" height="23" width="39" x="1280" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n59" type="attribute">
+          <geometry y="830" height="20" width="20" x="190"/>
+          <iri>ADCATERwidth</iri>
+          <label y="850" height="23" width="40" x="190" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n6" type="attribute">
+          <geometry y="330" height="20" width="20" x="330"/>
+          <iri>ADCATERoutcome</iri>
+          <label y="330" height="23" width="58" x="370" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n60" type="concept">
+          <geometry y="230" height="50" width="110" x="400"/>
+          <iri>ADCATERHospitalization</iri>
+          <label y="230" height="23" width="91" x="400" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n7" type="domain-restriction">
+          <geometry y="710" height="20" width="20" x="790"/>
+          <label y="710" height="23" width="39" x="820" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n8" type="attribute">
+          <geometry y="830" height="20" width="20" x="230"/>
+          <iri>ADCATERdepth</iri>
+          <label y="850" height="23" width="41" x="230" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n9" type="disjoint-union">
+          <geometry y="330" height="30" width="50" x="790"/>
+        </node>
+        <edge source="n0" target="n47" id="e0" type="input">
+          <point y="750" x="580"/>
+          <point y="710" x="580"/>
+        </edge>
+        <edge source="n1" target="n38" id="e1" type="equivalence">
+          <point y="790" x="230"/>
+          <point y="724" x="231"/>
+        </edge>
+        <edge source="n55" target="n7" id="e11" type="input">
+          <point y="750" x="790"/>
+          <point y="710" x="790"/>
+        </edge>
+        <edge source="n57" target="n9" id="e12" type="input">
+          <point y="420" x="1130"/>
+          <point y="330" x="1130"/>
+          <point y="330" x="790"/>
+        </edge>
+        <edge source="n14" target="n9" id="e13" type="equivalence">
+          <point y="230" x="790"/>
+          <point y="330" x="790"/>
+        </edge>
+        <edge source="n16" target="n9" id="e14" type="input">
+          <point y="430" x="470"/>
+          <point y="330" x="470"/>
+          <point y="330" x="790"/>
+        </edge>
+        <edge source="n10" target="n18" id="e15" type="input">
+          <point y="630" x="790"/>
+          <point y="520" x="790"/>
+          <point y="520" x="470"/>
+        </edge>
+        <edge source="n41" target="n11" id="e16" type="input">
+          <point y="750" x="990"/>
+          <point y="710" x="990"/>
+        </edge>
+        <edge source="n11" target="n48" id="e17" type="equivalence">
+          <point y="710" x="990"/>
+          <point y="630" x="990"/>
+        </edge>
+        <edge source="n12" target="n40" id="e18" type="input">
+          <point y="830" x="140"/>
+          <point y="790" x="140"/>
+        </edge>
+        <edge source="n13" target="n58" id="e19" type="input">
+          <point y="750" x="1250"/>
+          <point y="710" x="1250"/>
+        </edge>
+        <edge source="n8" target="n1" id="e2" type="input">
+          <point y="830" x="230"/>
+          <point y="790" x="230"/>
+        </edge>
+        <edge source="n49" target="n14" id="e20" type="equivalence">
+          <point y="230" x="680"/>
+          <point y="230" x="790"/>
+        </edge>
+        <edge source="n25" target="n15" id="e22" type="inclusion">
+          <point y="330" x="-130"/>
+          <point y="230" x="20"/>
+        </edge>
+        <edge source="n15" target="n42" id="e23" type="equivalence">
+          <point y="230" x="20"/>
+          <point y="230" x="130"/>
+        </edge>
+        <edge source="n53" target="n15" id="e24" type="inclusion">
+          <point y="372" x="20"/>
+          <point y="230" x="20"/>
+        </edge>
+        <edge source="n28" target="n15" id="e25" type="inclusion">
+          <point y="332" x="172"/>
+          <point y="230" x="20"/>
+        </edge>
+        <edge source="n18" target="n16" id="e26" type="inclusion">
+          <point y="520" x="470"/>
+          <point y="430" x="470"/>
+        </edge>
+        <edge source="n32" target="n18" id="e28" type="input">
+          <point y="630" x="580"/>
+          <point y="520" x="580"/>
+          <point y="520" x="470"/>
+        </edge>
+        <edge source="n35" target="n18" id="e29" type="input">
+          <point y="630" x="-10"/>
+          <point y="520" x="-10"/>
+          <point y="520" x="470"/>
+        </edge>
+        <edge source="n2" target="n46" id="e3" type="input">
+          <point y="780" x="280"/>
+          <point y="730" x="280"/>
+        </edge>
+        <edge source="n39" target="n18" id="e30" type="input">
+          <point y="630" x="380"/>
+          <point y="520" x="380"/>
+          <point y="520" x="470"/>
+        </edge>
+        <edge source="n38" target="n18" id="e31" type="input">
+          <point y="700" x="190"/>
+          <point y="520" x="190"/>
+          <point y="520" x="470"/>
+        </edge>
+        <edge source="n33" target="n18" id="e32" type="input">
+          <point y="630" x="-220"/>
+          <point y="520" x="-220"/>
+          <point y="520" x="470"/>
+        </edge>
+        <edge source="n19" target="n23" id="e33" type="input">
+          <point y="230" x="210"/>
+          <point y="230" x="280"/>
+        </edge>
+        <edge source="n19" target="n42" id="e34" type="input">
+          <point y="230" x="210"/>
+          <point y="230" x="130"/>
+        </edge>
+        <edge source="n58" target="n20" id="e35" type="equivalence">
+          <point y="710" x="1250"/>
+          <point y="630" x="1250"/>
+        </edge>
+        <edge source="n20" target="n43" id="e36" type="input">
+          <point y="630" x="1250"/>
+          <point y="530" x="1250"/>
+          <point y="530" x="1130"/>
+        </edge>
+        <edge source="n21" target="n45" id="e37" type="input">
+          <point y="230" x="600"/>
+          <point y="230" x="520"/>
+        </edge>
+        <edge source="n21" target="n49" id="e38" type="input">
+          <point y="230" x="600"/>
+          <point y="230" x="680"/>
+        </edge>
+        <edge source="n52" target="n22" id="e39" type="equivalence">
+          <point y="122" x="25"/>
+          <point y="120" x="130"/>
+        </edge>
+        <edge source="n29" target="n3" id="e4" type="input">
+          <point y="740" x="-220"/>
+          <point y="700" x="-220"/>
+        </edge>
+        <edge source="n37" target="n22" id="e40" type="input">
+          <point y="120" x="210"/>
+          <point y="120" x="130"/>
+        </edge>
+        <edge source="n23" target="n60" id="e41" type="equivalence">
+          <point y="230" x="280"/>
+          <point y="230" x="400"/>
+        </edge>
+        <edge source="n37" target="n24" id="e42" type="input">
+          <point y="120" x="210"/>
+          <point y="120" x="280"/>
+        </edge>
+        <edge source="n24" target="n60" id="e43" type="equivalence">
+          <point y="120" x="280"/>
+          <point y="230" x="400"/>
+        </edge>
+        <edge source="n34" target="n26" id="e45" type="input">
+          <point y="740" x="-10"/>
+          <point y="700" x="-10"/>
+        </edge>
+        <edge source="n27" target="n51" id="e46" type="input">
+          <point y="750" x="380"/>
+          <point y="710" x="380"/>
+        </edge>
+        <edge source="n38" target="n30" id="e47" type="equivalence">
+          <point y="690" x="244"/>
+          <point y="690" x="310"/>
+        </edge>
+        <edge source="n31" target="n50" id="e48" type="input">
+          <point y="230" x="950"/>
+          <point y="230" x="900"/>
+        </edge>
+        <edge source="n36" target="n54" id="e50" type="input">
+          <point y="750" x="90"/>
+          <point y="700" x="90"/>
+        </edge>
+        <edge source="n44" target="n38" id="e51" type="equivalence">
+          <point y="790" x="190"/>
+          <point y="700" x="190"/>
+        </edge>
+        <edge source="n38" target="n40" id="e53" type="equivalence">
+          <point y="724" x="140"/>
+          <point y="790" x="140"/>
+        </edge>
+        <edge source="n38" target="n46" id="e54" type="equivalence">
+          <point y="710" x="244"/>
+          <point y="730" x="280"/>
+        </edge>
+        <edge source="n39" target="n51" id="e55" type="equivalence">
+          <point y="630" x="380"/>
+          <point y="710" x="380"/>
+        </edge>
+        <edge source="n48" target="n43" id="e56" type="input">
+          <point y="630" x="990"/>
+          <point y="530" x="990"/>
+          <point y="530" x="1130"/>
+        </edge>
+        <edge source="n43" target="n57" id="e57" type="inclusion">
+          <point y="530" x="1130"/>
+          <point y="420" x="1130"/>
+        </edge>
+        <edge source="n59" target="n44" id="e58" type="input">
+          <point y="830" x="190"/>
+          <point y="790" x="190"/>
+        </edge>
+        <edge source="n56" target="n4" id="e6" type="input">
+          <point y="120" x="-150"/>
+          <point y="120" x="-90"/>
+        </edge>
+        <edge source="n60" target="n45" id="e60" type="equivalence">
+          <point y="230" x="400"/>
+          <point y="230" x="520"/>
+        </edge>
+        <edge source="n52" target="n4" id="e61" type="inclusion">
+          <point y="122" x="25"/>
+          <point y="120" x="-90"/>
+        </edge>
+        <edge source="n38" target="n54" id="e62" type="inclusion">
+          <point y="700" x="190"/>
+          <point y="700" x="90"/>
+        </edge>
+        <edge source="n32" target="n47" id="e63" type="inclusion">
+          <point y="630" x="580"/>
+          <point y="710" x="580"/>
+        </edge>
+        <edge source="n10" target="n7" id="e64" type="inclusion">
+          <point y="630" x="790"/>
+          <point y="710" x="790"/>
+        </edge>
+        <edge source="n33" target="n3" id="e65" type="inclusion">
+          <point y="630" x="-220"/>
+          <point y="700" x="-220"/>
+        </edge>
+        <edge source="n35" target="n26" id="e66" type="inclusion">
+          <point y="630" x="-10"/>
+          <point y="700" x="-10"/>
+        </edge>
+        <edge source="n28" target="n17" id="e67" type="inclusion">
+          <point y="332" x="172"/>
+          <point y="330" x="280"/>
+        </edge>
+        <edge source="n14" target="n50" id="e68" type="inclusion">
+          <point y="230" x="790"/>
+          <point y="230" x="900"/>
+        </edge>
+        <edge source="n5" target="n30" id="e8" type="input">
+          <point y="750" x="310"/>
+          <point y="690" x="310"/>
+        </edge>
+        <edge source="n6" target="n17" id="e9" type="input">
+          <point y="330" x="330"/>
+          <point y="330" x="280"/>
+        </edge>
+      </diagram>
+      <diagram width="5000" height="5000" name="nutrition">
+        <node color="#fcfcfc" id="n1" type="concept">
+          <geometry y="240" height="50" width="110" x="410"/>
+          <iri>ADCATERHospitalization</iri>
+          <label y="240" height="23" width="91" x="410" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n10" type="concept">
+          <geometry y="240" height="50" width="160" x="-250"/>
+          <iri>ADCATERPersonal_Nutrition_Profile</iri>
+          <label y="237" height="23" width="149" x="-250" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n102" type="domain-restriction">
+          <geometry y="160" height="20" width="20" x="-460"/>
+          <label y="135" height="23" width="39" x="-460" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n103" type="attribute">
+          <geometry y="160" height="20" width="20" x="-510"/>
+          <iri>ADCATERfood_texture</iri>
+          <label y="160" height="23" width="77" x="-560" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n104" type="domain-restriction">
+          <geometry y="210" height="20" width="20" x="-460"/>
+          <label y="185" height="23" width="39" x="-460" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n105" type="attribute">
+          <geometry y="210" height="20" width="20" x="-510"/>
+          <iri>ADCATERliquid_texture</iri>
+          <label y="210" height="23" width="82" x="-565" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n106" type="domain-restriction">
+          <geometry y="260" height="20" width="20" x="-460"/>
+          <label y="235" height="23" width="39" x="-460" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n107" type="attribute">
+          <geometry y="260" height="20" width="20" x="-510"/>
+          <iri>ADCATERnutrition_convention</iri>
+          <label y="260" height="23" width="119" x="-580" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n108" type="domain-restriction">
+          <geometry y="300" height="20" width="20" x="-460"/>
+          <label y="275" height="23" width="39" x="-460" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n109" type="attribute">
+          <geometry y="300" height="20" width="20" x="-510"/>
+          <iri>ADCATERindipendent_eating</iri>
+          <label y="300" height="23" width="111" x="-575" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n11" type="role">
+          <geometry y="240" height="50" width="70" x="190"/>
+          <iri>ADCATERrelated_to_hospitalization</iri>
+          <label y="200" height="23" width="147" x="190" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n110" type="domain-restriction">
+          <geometry y="350" height="20" width="20" x="-460"/>
+          <label y="325" height="23" width="39" x="-460" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n111" type="attribute">
+          <geometry y="350" height="20" width="20" x="-510"/>
+          <iri>ADCATERfood_allergies</iri>
+          <label y="350" height="23" width="85" x="-565" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n112" type="attribute">
+          <geometry y="770" height="20" width="20" x="-540"/>
+          <iri>ADCATERwater</iri>
+          <label y="770" height="23" width="40" x="-575" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n113" type="domain-restriction">
+          <geometry y="720" height="20" width="20" x="-490"/>
+          <label y="695" height="23" width="39" x="-490" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n114" type="domain-restriction">
+          <geometry y="580" height="20" width="20" x="-490"/>
+          <label y="555" height="23" width="39" x="-490" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n115" type="domain-restriction">
+          <geometry y="670" height="20" width="20" x="-490"/>
+          <label y="645" height="23" width="39" x="-490" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n116" type="domain-restriction">
+          <geometry y="770" height="20" width="20" x="-490"/>
+          <label y="745" height="23" width="39" x="-490" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n117" type="attribute">
+          <geometry y="630" height="20" width="20" x="-540"/>
+          <iri>ADCATERsodium</iri>
+          <label y="630" height="23" width="50" x="-580" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n118" type="attribute">
+          <geometry y="720" height="20" width="20" x="-540"/>
+          <iri>ADCATERproteins</iri>
+          <label y="720" height="23" width="54" x="-580" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n119" type="attribute">
+          <geometry y="670" height="20" width="20" x="-540"/>
+          <iri>ADCATERKcals</iri>
+          <label y="670" height="23" width="40" x="-575" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n12" type="range-restriction">
+          <geometry y="240" height="20" width="20" x="270"/>
+          <label y="218" height="23" width="39" x="270" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n120" type="domain-restriction">
+          <geometry y="630" height="20" width="20" x="-490"/>
+          <label y="605" height="23" width="39" x="-490" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n121" type="attribute">
+          <geometry y="580" height="20" width="20" x="-540"/>
+          <iri>ADCATERpotassium</iri>
+          <label y="580" height="23" width="67" x="-590" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n124" type="domain-restriction">
+          <geometry y="810" height="20" width="20" x="-490"/>
+          <label y="785" height="23" width="39" x="-490" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n125" type="domain-restriction">
+          <geometry y="900" height="20" width="20" x="-490"/>
+          <label y="875" height="23" width="39" x="-490" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n127" type="attribute">
+          <geometry y="850" height="20" width="20" x="-540"/>
+          <iri>ADCATERfat</iri>
+          <label y="850" height="23" width="25" x="-570" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n129" type="attribute">
+          <geometry y="900" height="20" width="20" x="-540"/>
+          <iri>ADCATERcarbohydrates</iri>
+          <label y="900" height="23" width="87" x="-610" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n13" type="domain-restriction">
+          <geometry y="240" height="20" width="20" x="100"/>
+          <label y="218" height="23" width="39" x="100" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n130" type="domain-restriction">
+          <geometry y="850" height="20" width="20" x="-490"/>
+          <label y="825" height="23" width="39" x="-490" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n131" type="attribute">
+          <geometry y="810" height="20" width="20" x="-540"/>
+          <iri>ADCATERfiber</iri>
+          <label y="810" height="23" width="34" x="-575" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n132" type="domain-restriction">
+          <geometry y="1650" height="20" width="20" x="230"/>
+          <label y="1625" height="23" width="39" x="230" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n133" type="attribute">
+          <geometry y="1350" height="20" width="20" x="280"/>
+          <iri>ADCATERpotassium</iri>
+          <label y="1350" height="23" width="67" x="325" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n134" type="attribute">
+          <geometry y="1600" height="20" width="20" x="280"/>
+          <iri>ADCATERfiber</iri>
+          <label y="1600" height="23" width="34" x="310" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n135" type="domain-restriction">
+          <geometry y="1350" height="20" width="20" x="230"/>
+          <label y="1325" height="23" width="39" x="230" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n136" type="attribute">
+          <geometry y="1400" height="20" width="20" x="280"/>
+          <iri>ADCATERsodium</iri>
+          <label y="1400" height="23" width="50" x="315" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n137" type="attribute">
+          <geometry y="1450" height="20" width="20" x="280"/>
+          <iri>ADCATERKcals</iri>
+          <label y="1450" height="23" width="40" x="310" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n138" type="domain-restriction">
+          <geometry y="1550" height="20" width="20" x="230"/>
+          <label y="1525" height="23" width="39" x="230" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n139" type="attribute">
+          <geometry y="1650" height="20" width="20" x="280"/>
+          <iri>ADCATERfat</iri>
+          <label y="1650" height="23" width="25" x="305" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n14" type="range-restriction">
+          <geometry y="510" height="20" width="20" x="60"/>
+          <label y="530" height="23" width="39" x="60" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n140" type="domain-restriction">
+          <geometry y="1450" height="20" width="20" x="230"/>
+          <label y="1425" height="23" width="39" x="230" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n141" type="domain-restriction">
+          <geometry y="1600" height="20" width="20" x="230"/>
+          <label y="1575" height="23" width="39" x="230" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n142" type="attribute">
+          <geometry y="1500" height="20" width="20" x="280"/>
+          <iri>ADCATERproteins</iri>
+          <label y="1500" height="23" width="54" x="315" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n143" type="domain-restriction">
+          <geometry y="1700" height="20" width="20" x="230"/>
+          <label y="1675" height="23" width="39" x="230" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n144" type="domain-restriction">
+          <geometry y="1400" height="20" width="20" x="230"/>
+          <label y="1375" height="23" width="39" x="230" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n145" type="attribute">
+          <geometry y="1700" height="20" width="20" x="280"/>
+          <iri>ADCATERcarbohydrates</iri>
+          <label y="1700" height="23" width="87" x="330" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n146" type="attribute">
+          <geometry y="1550" height="20" width="20" x="280"/>
+          <iri>ADCATERwater</iri>
+          <label y="1550" height="23" width="40" x="310" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n147" type="domain-restriction">
+          <geometry y="1500" height="20" width="20" x="230"/>
+          <label y="1475" height="23" width="39" x="230" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n148" type="concept">
+          <geometry y="1660" height="50" width="110" x="530"/>
+          <iri>ADCATERSpecial_Meal</iri>
+          <label y="1660" height="23" width="81" x="530" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n149" type="domain-restriction">
+          <geometry y="1500" height="20" width="20" x="640"/>
+          <label y="1475" height="23" width="39" x="640" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n15" type="role">
+          <geometry y="440" height="50" width="70" x="60"/>
+          <iri>ADCATERnutrition_plan_based_on_profile</iri>
+          <label y="465" height="23" width="178" x="160" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n150" type="attribute">
+          <geometry y="1500" height="20" width="20" x="690"/>
+          <iri>ADCATERtype</iri>
+          <label y="1500" height="23" width="33" x="720" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n151" type="attribute">
+          <geometry y="1210" height="20" width="20" x="700"/>
+          <iri>ADCATERweek</iri>
+          <label y="1210" height="23" width="38" x="735" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n152" type="domain-restriction">
+          <geometry y="1210" height="20" width="20" x="650"/>
+          <label y="1185" height="23" width="39" x="650" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n153" type="domain-restriction">
+          <geometry y="1260" height="20" width="20" x="650"/>
+          <label y="1235" height="23" width="39" x="650" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n154" type="domain-restriction">
+          <geometry y="1160" height="20" width="20" x="650"/>
+          <label y="1135" height="23" width="39" x="650" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n155" type="attribute">
+          <geometry y="1260" height="20" width="20" x="700"/>
+          <iri>ADCATERday</iri>
+          <label y="1260" height="23" width="29" x="730" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n156" type="attribute">
+          <geometry y="1160" height="20" width="20" x="700"/>
+          <iri>ADCATERdate</iri>
+          <label y="1160" height="23" width="34" x="735" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n157" type="attribute">
+          <geometry y="820" height="20" width="20" x="690"/>
+          <iri>ADCATERdate</iri>
+          <label y="820" height="23" width="34" x="720" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n158" type="domain-restriction">
+          <geometry y="820" height="20" width="20" x="630"/>
+          <label y="840" height="23" width="39" x="630" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n159" type="domain-restriction">
+          <geometry y="630" height="20" width="20" x="-130"/>
+          <label y="610" height="23" width="39" x="-130" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n16" type="domain-restriction">
+          <geometry y="360" height="20" width="20" x="60"/>
+          <label y="338" height="23" width="39" x="60" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n160" type="attribute">
+          <geometry y="630" height="20" width="20" x="-80"/>
+          <iri>ADCATERvolume</iri>
+          <label y="630" height="23" width="49" x="-50" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n161" type="domain-restriction">
+          <geometry y="660" height="20" width="20" x="-130"/>
+          <label y="680" height="23" width="39" x="-130" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n162" type="attribute">
+          <geometry y="660" height="20" width="20" x="-80"/>
+          <iri>ADCATERweight</iri>
+          <label y="660" height="23" width="46" x="-50" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n163" type="domain-restriction">
+          <geometry y="780" height="20" width="20" x="630"/>
+          <label y="760" height="23" width="39" x="630" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n164" type="attribute">
+          <geometry y="780" height="20" width="20" x="690"/>
+          <iri>ADCATERtype</iri>
+          <label y="780" height="23" width="33" x="720" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n165" type="attribute">
+          <geometry y="1660" height="20" width="20" x="690"/>
+          <iri>ADCATERdescription</iri>
+          <label y="1660" height="23" width="70" x="735" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n166" type="domain-restriction">
+          <geometry y="1660" height="20" width="20" x="640"/>
+          <label y="1635" height="23" width="39" x="640" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n168" type="range-restriction">
+          <geometry y="590" height="20" width="20" x="530"/>
+          <label y="590" height="23" width="39" x="560" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n169" type="domain-restriction">
+          <geometry y="720" height="20" width="20" x="530"/>
+          <label y="720" height="23" width="39" x="560" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n170" type="domain-restriction">
+          <geometry y="820" height="20" width="20" x="100"/>
+          <label y="798" height="23" width="39" x="100" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n171" type="range-restriction">
+          <geometry y="820" height="20" width="20" x="-70"/>
+          <label y="798" height="23" width="39" x="-70" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n172" type="range-restriction">
+          <geometry y="1040" height="20" width="20" x="170"/>
+          <label y="1018" height="23" width="39" x="170" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n173" type="domain-restriction">
+          <geometry y="1040" height="20" width="20" x="340"/>
+          <label y="1018" height="23" width="39" x="340" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n174" type="concept">
+          <geometry y="1040" height="55" width="110" x="60"/>
+          <iri>ADCATERServed_item</iri>
+          <label y="1040" height="23" width="76" x="60" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n178" type="role">
+          <geometry y="1040" height="55" width="70" x="-150"/>
+          <iri>ADCATERis_served_in_meal</iri>
+          <label y="1005" height="23" width="107" x="-150" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n181" type="range-restriction">
+          <geometry y="1040" height="20" width="20" x="-70"/>
+          <label y="1018" height="23" width="39" x="-70" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n182" type="domain-restriction">
+          <geometry y="1040" height="20" width="20" x="-240"/>
+          <label y="1060" height="23" width="39" x="-240" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n183" type="attribute">
+          <geometry y="910" height="20" width="20" x="60"/>
+          <iri>ADCATERconsumption</iri>
+          <label y="888" height="23" width="80" x="60" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n184" type="domain-restriction">
+          <geometry y="960" height="20" width="20" x="60"/>
+          <label y="960" height="23" width="39" x="90" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n185" type="attribute">
+          <geometry y="560" height="20" width="20" x="230"/>
+          <iri>ADCATERKcals</iri>
+          <label y="538" height="23" width="40" x="230" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n186" type="domain-restriction">
+          <geometry y="560" height="20" width="20" x="300"/>
+          <label y="585" height="23" width="39" x="300" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n187" type="attribute">
+          <geometry y="640" height="20" width="20" x="240"/>
+          <iri>ADCATERproteins</iri>
+          <label y="618" height="23" width="54" x="240" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n188" type="domain-restriction">
+          <geometry y="640" height="20" width="20" x="310"/>
+          <label y="635" height="23" width="39" x="340" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n189" type="attribute">
+          <geometry y="450" height="20" width="20" x="280"/>
+          <iri>ADCATERdate</iri>
+          <label y="428" height="23" width="34" x="280" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n190" type="domain-restriction">
+          <geometry y="450" height="20" width="20" x="330"/>
+          <label y="475" height="23" width="39" x="330" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n26" type="concept">
+          <geometry y="710" height="55" width="110" x="-250"/>
+          <iri>ADCATERFood_Item</iri>
+          <label y="710" height="23" width="67" x="-250" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n27" type="domain-restriction">
+          <geometry y="390" height="20" width="20" x="-340"/>
+          <label y="390" height="23" width="39" x="-370" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n28" type="range-restriction">
+          <geometry y="540" height="20" width="20" x="-340"/>
+          <label y="540" height="23" width="39" x="-370" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n29" type="role">
+          <geometry y="470" height="50" width="70" x="-340"/>
+          <iri>ADCATERfood_preference_positive</iri>
+          <label y="470" height="23" width="144" x="-450" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n30" type="domain-restriction">
+          <geometry y="390" height="20" width="20" x="-170"/>
+          <label y="390" height="23" width="39" x="-140" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n31" type="role">
+          <geometry y="470" height="50" width="70" x="-170"/>
+          <iri>ADCATERfood_preference_negative</iri>
+          <label y="485" height="23" width="148" x="-75" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n32" type="range-restriction">
+          <geometry y="540" height="20" width="20" x="-170"/>
+          <label y="540" height="23" width="39" x="-140" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n33" type="range-restriction">
+          <geometry y="710" height="20" width="20" x="100"/>
+          <label y="688" height="23" width="39" x="100" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n34" type="role">
+          <geometry y="710" height="55" width="70" x="20"/>
+          <iri>ADCATERfood_enrichment</iri>
+          <label y="675" height="23" width="101" x="20" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n35" type="domain-restriction">
+          <geometry y="710" height="20" width="20" x="-70"/>
+          <label y="688" height="23" width="39" x="-70" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n36" type="concept">
+          <geometry y="820" height="50" width="110" x="530"/>
+          <iri>ADCATERPatient_Meal</iri>
+          <label y="820" height="23" width="80" x="530" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n41" type="role">
+          <geometry y="660" height="50" width="70" x="530"/>
+          <iri>ADCATERmeal_refers_to_hospitalization</iri>
+          <label y="660" height="23" width="173" x="655" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n44" type="role">
+          <geometry y="820" height="55" width="70" x="20"/>
+          <iri>ADCATERordered_items</iri>
+          <label y="780" height="23" width="87" x="20" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n46" type="role">
+          <geometry y="1040" height="55" width="70" x="260"/>
+          <iri>ADCATERhas_served_item</iri>
+          <label y="1005" height="23" width="100" x="260" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n52" type="concept">
+          <geometry y="1210" height="50" width="110" x="530"/>
+          <iri>ADCATERMeal_Assignment</iri>
+          <label y="1210" height="23" width="106" x="530" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n53" type="concept">
+          <geometry y="1500" height="50" width="110" x="530"/>
+          <iri>ADCATERMeal</iri>
+          <label y="1500" height="23" width="37" x="530" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n54" type="range-restriction">
+          <geometry y="1110" height="20" width="20" x="530"/>
+          <label y="1110" height="23" width="39" x="560" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n55" type="role">
+          <geometry y="1050" height="50" width="70" x="530"/>
+          <iri>ADCATERselected_from_available_meals</iri>
+          <label y="1050" height="23" width="177" x="655" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n56" type="domain-restriction">
+          <geometry y="980" height="20" width="20" x="530"/>
+          <label y="980" height="23" width="39" x="560" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n57" type="range-restriction">
+          <geometry y="1210" height="20" width="20" x="100"/>
+          <label y="1188" height="23" width="39" x="100" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n58" type="domain-restriction">
+          <geometry y="1210" height="20" width="20" x="-70"/>
+          <label y="1188" height="23" width="39" x="-70" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n59" type="role">
+          <geometry y="1210" height="55" width="70" x="20"/>
+          <iri>ADCATERmeal_item</iri>
+          <label y="1170" height="23" width="66" x="20" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n6" type="concept">
+          <geometry y="510" height="50" width="110" x="410"/>
+          <iri>ADCATERNutrition_Plan</iri>
+          <label y="510" height="23" width="86" x="410" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n60" type="role">
+          <geometry y="1360" height="50" width="70" x="530"/>
+          <iri>ADCATERassigned_meal</iri>
+          <label y="1360" height="23" width="90" x="610" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n61" type="range-restriction">
+          <geometry y="1420" height="20" width="20" x="530"/>
+          <label y="1420" height="23" width="39" x="560" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n62" type="domain-restriction">
+          <geometry y="1290" height="20" width="20" x="530"/>
+          <label y="1290" height="23" width="39" x="560" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n63" type="concept">
+          <geometry y="1500" height="50" width="110" x="-10"/>
+          <iri>ADCATERIngredient</iri>
+          <label y="1500" height="23" width="64" x="-10" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n64" type="range-restriction">
+          <geometry y="1500" height="20" width="20" x="-110"/>
+          <label y="1520" height="23" width="39" x="-110" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n65" type="domain-restriction">
+          <geometry y="1500" height="20" width="20" x="-280"/>
+          <label y="1500" height="23" width="39" x="-310" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n66" type="role">
+          <geometry y="1500" height="55" width="70" x="-190"/>
+          <iri>ADCATERhas_ingredient</iri>
+          <label y="1460" height="23" width="88" x="-195" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n7" type="role">
+          <geometry y="380" height="50" width="70" x="410"/>
+          <iri>ADCATERassociated_nutrition_plan</iri>
+          <label y="380" height="23" width="147" x="300" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n70" type="concept">
+          <geometry y="870" height="50" width="110" x="-180"/>
+          <iri>ADCATERMedical_food_item</iri>
+          <label y="870" height="23" width="112" x="-180" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n8" type="domain-restriction">
+          <geometry y="310" height="20" width="20" x="410"/>
+          <label y="310" height="23" width="39" x="380" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n9" type="range-restriction">
+          <geometry y="440" height="20" width="20" x="410"/>
+          <label y="440" height="23" width="39" x="380" size="12" customSize="0">exists</label>
+        </node>
+        <edge source="n12" target="n1" id="e10" type="equivalence">
+          <point y="240" x="270"/>
+          <point y="240" x="410"/>
+        </edge>
+        <edge source="n13" target="n10" id="e11" type="inclusion">
+          <point y="240" x="100"/>
+          <point y="240" x="-250"/>
+        </edge>
+        <edge source="n103" target="n102" id="e115" type="input">
+          <point y="160" x="-510"/>
+          <point y="160" x="-460"/>
+        </edge>
+        <edge source="n105" target="n104" id="e116" type="input">
+          <point y="210" x="-510"/>
+          <point y="210" x="-500"/>
+          <point y="210" x="-460"/>
+        </edge>
+        <edge source="n107" target="n106" id="e117" type="input">
+          <point y="260" x="-510"/>
+          <point y="260" x="-460"/>
+        </edge>
+        <edge source="n109" target="n108" id="e118" type="input">
+          <point y="300" x="-510"/>
+          <point y="300" x="-460"/>
+        </edge>
+        <edge source="n111" target="n110" id="e119" type="input">
+          <point y="350" x="-510"/>
+          <point y="350" x="-460"/>
+        </edge>
+        <edge source="n15" target="n14" id="e12" type="input">
+          <point y="440" x="60"/>
+          <point y="510" x="60"/>
+        </edge>
+        <edge source="n102" target="n10" id="e120" type="equivalence">
+          <point y="160" x="-460"/>
+          <point y="240" x="-250"/>
+        </edge>
+        <edge source="n104" target="n10" id="e121" type="equivalence">
+          <point y="210" x="-460"/>
+          <point y="240" x="-250"/>
+        </edge>
+        <edge source="n106" target="n10" id="e122" type="equivalence">
+          <point y="260" x="-460"/>
+          <point y="240" x="-250"/>
+        </edge>
+        <edge source="n108" target="n10" id="e123" type="equivalence">
+          <point y="300" x="-460"/>
+          <point y="240" x="-250"/>
+        </edge>
+        <edge source="n110" target="n10" id="e124" type="equivalence">
+          <point y="350" x="-460"/>
+          <point y="240" x="-250"/>
+        </edge>
+        <edge source="n112" target="n116" id="e125" type="input">
+          <point y="770" x="-540"/>
+          <point y="770" x="-490"/>
+        </edge>
+        <edge source="n118" target="n113" id="e126" type="input">
+          <point y="720" x="-540"/>
+          <point y="720" x="-490"/>
+        </edge>
+        <edge source="n121" target="n114" id="e127" type="input">
+          <point y="580" x="-540"/>
+          <point y="580" x="-490"/>
+        </edge>
+        <edge source="n119" target="n115" id="e128" type="input">
+          <point y="670" x="-540"/>
+          <point y="670" x="-490"/>
+        </edge>
+        <edge source="n117" target="n120" id="e129" type="input">
+          <point y="630" x="-540"/>
+          <point y="630" x="-490"/>
+        </edge>
+        <edge source="n15" target="n16" id="e13" type="input">
+          <point y="440" x="60"/>
+          <point y="360" x="60"/>
+        </edge>
+        <edge source="n131" target="n124" id="e132" type="input">
+          <point y="810" x="-540"/>
+          <point y="810" x="-490"/>
+        </edge>
+        <edge source="n129" target="n125" id="e133" type="input">
+          <point y="900" x="-540"/>
+          <point y="900" x="-490"/>
+        </edge>
+        <edge source="n127" target="n130" id="e134" type="input">
+          <point y="850" x="-540"/>
+          <point y="850" x="-490"/>
+        </edge>
+        <edge source="n133" target="n135" id="e144" type="input">
+          <point y="1350" x="280"/>
+          <point y="1350" x="230"/>
+        </edge>
+        <edge source="n136" target="n144" id="e146" type="input">
+          <point y="1400" x="280"/>
+          <point y="1400" x="230"/>
+        </edge>
+        <edge source="n137" target="n140" id="e147" type="input">
+          <point y="1450" x="280"/>
+          <point y="1450" x="230"/>
+        </edge>
+        <edge source="n146" target="n138" id="e148" type="input">
+          <point y="1550" x="280"/>
+          <point y="1550" x="230"/>
+        </edge>
+        <edge source="n142" target="n147" id="e149" type="input">
+          <point y="1500" x="280"/>
+          <point y="1500" x="230"/>
+        </edge>
+        <edge source="n14" target="n6" id="e15" type="equivalence">
+          <point y="510" x="60"/>
+          <point y="510" x="410"/>
+        </edge>
+        <edge source="n145" target="n143" id="e150" type="input">
+          <point y="1700" x="280"/>
+          <point y="1700" x="230"/>
+        </edge>
+        <edge source="n134" target="n141" id="e151" type="input">
+          <point y="1600" x="280"/>
+          <point y="1600" x="230"/>
+        </edge>
+        <edge source="n139" target="n132" id="e152" type="input">
+          <point y="1650" x="280"/>
+          <point y="1650" x="230"/>
+        </edge>
+        <edge source="n148" target="n53" id="e161" type="inclusion">
+          <point y="1660" x="530"/>
+          <point y="1500" x="530"/>
+        </edge>
+        <edge source="n150" target="n149" id="e162" type="input">
+          <point y="1500" x="690"/>
+          <point y="1500" x="640"/>
+        </edge>
+        <edge source="n151" target="n152" id="e164" type="input">
+          <point y="1210" x="700"/>
+          <point y="1210" x="650"/>
+        </edge>
+        <edge source="n155" target="n153" id="e165" type="input">
+          <point y="1260" x="700"/>
+          <point y="1260" x="650"/>
+        </edge>
+        <edge source="n156" target="n154" id="e166" type="input">
+          <point y="1160" x="700"/>
+          <point y="1160" x="650"/>
+        </edge>
+        <edge source="n157" target="n158" id="e170" type="input">
+          <point y="820" x="690"/>
+          <point y="820" x="630"/>
+        </edge>
+        <edge source="n160" target="n159" id="e172" type="input">
+          <point y="630" x="-80"/>
+          <point y="630" x="-130"/>
+        </edge>
+        <edge source="n162" target="n161" id="e173" type="input">
+          <point y="660" x="-80"/>
+          <point y="660" x="-130"/>
+        </edge>
+        <edge source="n26" target="n161" id="e174" type="equivalence">
+          <point y="710" x="-250"/>
+          <point y="660" x="-130"/>
+        </edge>
+        <edge source="n26" target="n159" id="e175" type="equivalence">
+          <point y="710" x="-250"/>
+          <point y="630" x="-130"/>
+        </edge>
+        <edge source="n164" target="n163" id="e176" type="input">
+          <point y="780" x="690"/>
+          <point y="780" x="630"/>
+        </edge>
+        <edge source="n165" target="n166" id="e178" type="input">
+          <point y="1660" x="690"/>
+          <point y="1660" x="640"/>
+        </edge>
+        <edge source="n16" target="n10" id="e180" type="inclusion">
+          <point y="360" x="60"/>
+          <point y="240" x="-250"/>
+        </edge>
+        <edge source="n178" target="n182" id="e184" type="input">
+          <point y="1040" x="-150"/>
+          <point y="1040" x="-240"/>
+        </edge>
+        <edge source="n178" target="n181" id="e185" type="input">
+          <point y="1040" x="-150"/>
+          <point y="1040" x="-70"/>
+        </edge>
+        <edge source="n182" target="n26" id="e186" type="inclusion">
+          <point y="1040" x="-240"/>
+          <point y="740" x="-240"/>
+          <point y="710" x="-250"/>
+        </edge>
+        <edge source="n181" target="n174" id="e187" type="equivalence">
+          <point y="1040" x="-70"/>
+          <point y="1040" x="60"/>
+        </edge>
+        <edge source="n174" target="n172" id="e188" type="equivalence">
+          <point y="1040" x="60"/>
+          <point y="1040" x="170"/>
+        </edge>
+        <edge source="n183" target="n184" id="e189" type="input">
+          <point y="910" x="60"/>
+          <point y="960" x="60"/>
+        </edge>
+        <edge source="n184" target="n174" id="e190" type="equivalence">
+          <point y="960" x="60"/>
+          <point y="1040" x="60"/>
+        </edge>
+        <edge source="n57" target="n53" id="e191" type="equivalence">
+          <point y="1210" x="100"/>
+          <point y="1210" x="380"/>
+          <point y="1500" x="380"/>
+          <point y="1500" x="530"/>
+        </edge>
+        <edge source="n185" target="n186" id="e192" type="input">
+          <point y="560" x="230"/>
+          <point y="560" x="300"/>
+        </edge>
+        <edge source="n6" target="n186" id="e193" type="inclusion">
+          <point y="510" x="410"/>
+          <point y="560" x="300"/>
+        </edge>
+        <edge source="n187" target="n188" id="e194" type="input">
+          <point y="640" x="240"/>
+          <point y="640" x="310"/>
+        </edge>
+        <edge source="n6" target="n188" id="e195" type="inclusion">
+          <point y="510" x="410"/>
+          <point y="640" x="310"/>
+        </edge>
+        <edge source="n189" target="n190" id="e196" type="input">
+          <point y="450" x="280"/>
+          <point y="450" x="330"/>
+        </edge>
+        <edge source="n6" target="n190" id="e197" type="inclusion">
+          <point y="510" x="410"/>
+          <point y="450" x="330"/>
+        </edge>
+        <edge source="n26" target="n114" id="e198" type="inclusion">
+          <point y="710" x="-250"/>
+          <point y="580" x="-490"/>
+        </edge>
+        <edge source="n26" target="n120" id="e199" type="inclusion">
+          <point y="710" x="-250"/>
+          <point y="630" x="-490"/>
+        </edge>
+        <edge source="n26" target="n115" id="e200" type="inclusion">
+          <point y="710" x="-250"/>
+          <point y="670" x="-490"/>
+        </edge>
+        <edge source="n26" target="n113" id="e201" type="inclusion">
+          <point y="710" x="-250"/>
+          <point y="720" x="-490"/>
+        </edge>
+        <edge source="n26" target="n116" id="e202" type="inclusion">
+          <point y="710" x="-250"/>
+          <point y="770" x="-490"/>
+        </edge>
+        <edge source="n26" target="n124" id="e203" type="inclusion">
+          <point y="710" x="-250"/>
+          <point y="810" x="-490"/>
+        </edge>
+        <edge source="n26" target="n130" id="e204" type="inclusion">
+          <point y="710" x="-250"/>
+          <point y="850" x="-490"/>
+        </edge>
+        <edge source="n26" target="n125" id="e205" type="inclusion">
+          <point y="710" x="-250"/>
+          <point y="900" x="-490"/>
+        </edge>
+        <edge source="n63" target="n135" id="e206" type="inclusion">
+          <point y="1500" x="-10"/>
+          <point y="1350" x="230"/>
+        </edge>
+        <edge source="n63" target="n144" id="e207" type="inclusion">
+          <point y="1500" x="-10"/>
+          <point y="1400" x="230"/>
+        </edge>
+        <edge source="n63" target="n140" id="e208" type="inclusion">
+          <point y="1500" x="-10"/>
+          <point y="1450" x="230"/>
+        </edge>
+        <edge source="n63" target="n147" id="e209" type="inclusion">
+          <point y="1500" x="-10"/>
+          <point y="1500" x="230"/>
+        </edge>
+        <edge source="n63" target="n138" id="e210" type="inclusion">
+          <point y="1500" x="-10"/>
+          <point y="1550" x="230"/>
+        </edge>
+        <edge source="n63" target="n141" id="e211" type="inclusion">
+          <point y="1500" x="-10"/>
+          <point y="1600" x="230"/>
+        </edge>
+        <edge source="n63" target="n132" id="e212" type="inclusion">
+          <point y="1500" x="-10"/>
+          <point y="1650" x="230"/>
+        </edge>
+        <edge source="n63" target="n143" id="e213" type="inclusion">
+          <point y="1500" x="-10"/>
+          <point y="1700" x="230"/>
+        </edge>
+        <edge source="n53" target="n149" id="e214" type="inclusion">
+          <point y="1500" x="530"/>
+          <point y="1500" x="640"/>
+        </edge>
+        <edge source="n36" target="n163" id="e215" type="inclusion">
+          <point y="820" x="530"/>
+          <point y="780" x="630"/>
+        </edge>
+        <edge source="n36" target="n158" id="e216" type="inclusion">
+          <point y="820" x="530"/>
+          <point y="820" x="630"/>
+        </edge>
+        <edge source="n52" target="n154" id="e217" type="inclusion">
+          <point y="1210" x="530"/>
+          <point y="1160" x="650"/>
+        </edge>
+        <edge source="n52" target="n152" id="e218" type="inclusion">
+          <point y="1210" x="530"/>
+          <point y="1210" x="650"/>
+        </edge>
+        <edge source="n52" target="n153" id="e219" type="inclusion">
+          <point y="1210" x="530"/>
+          <point y="1260" x="650"/>
+        </edge>
+        <edge source="n148" target="n166" id="e220" type="inclusion">
+          <point y="1660" x="530"/>
+          <point y="1660" x="640"/>
+        </edge>
+        <edge source="n29" target="n27" id="e24" type="input">
+          <point y="470" x="-340"/>
+          <point y="390" x="-340"/>
+        </edge>
+        <edge source="n29" target="n28" id="e25" type="input">
+          <point y="470" x="-340"/>
+          <point y="540" x="-340"/>
+        </edge>
+        <edge source="n31" target="n30" id="e26" type="input">
+          <point y="470" x="-170"/>
+          <point y="390" x="-170"/>
+        </edge>
+        <edge source="n31" target="n32" id="e27" type="input">
+          <point y="470" x="-170"/>
+          <point y="540" x="-170"/>
+        </edge>
+        <edge source="n27" target="n10" id="e29" type="equivalence">
+          <point y="390" x="-340"/>
+          <point y="240" x="-250"/>
+        </edge>
+        <edge source="n10" target="n30" id="e30" type="equivalence">
+          <point y="240" x="-250"/>
+          <point y="390" x="-170"/>
+        </edge>
+        <edge source="n28" target="n26" id="e31" type="equivalence">
+          <point y="540" x="-340"/>
+          <point y="710" x="-250"/>
+        </edge>
+        <edge source="n32" target="n26" id="e32" type="equivalence">
+          <point y="540" x="-170"/>
+          <point y="622" x="-209"/>
+          <point y="710" x="-250"/>
+        </edge>
+        <edge source="n34" target="n33" id="e33" type="input">
+          <point y="710" x="20"/>
+          <point y="710" x="100"/>
+        </edge>
+        <edge source="n34" target="n35" id="e34" type="input">
+          <point y="710" x="20"/>
+          <point y="710" x="-70"/>
+        </edge>
+        <edge source="n26" target="n35" id="e35" type="equivalence">
+          <point y="710" x="-250"/>
+          <point y="710" x="-70"/>
+        </edge>
+        <edge source="n33" target="n6" id="e36" type="equivalence">
+          <point y="710" x="100"/>
+          <point y="710" x="410"/>
+          <point y="510" x="410"/>
+        </edge>
+        <edge source="n41" target="n169" id="e39" type="input">
+          <point y="660" x="530"/>
+          <point y="720" x="530"/>
+        </edge>
+        <edge source="n7" target="n8" id="e4" type="input">
+          <point y="380" x="410"/>
+          <point y="310" x="410"/>
+        </edge>
+        <edge source="n41" target="n168" id="e40" type="input">
+          <point y="660" x="530"/>
+          <point y="590" x="530"/>
+        </edge>
+        <edge source="n169" target="n36" id="e41" type="equivalence">
+          <point y="720" x="530"/>
+          <point y="820" x="530"/>
+        </edge>
+        <edge source="n1" target="n168" id="e42" type="equivalence">
+          <point y="264" x="450"/>
+          <point y="450" x="450"/>
+          <point y="450" x="530"/>
+          <point y="590" x="530"/>
+        </edge>
+        <edge source="n44" target="n171" id="e43" type="input">
+          <point y="820" x="20"/>
+          <point y="820" x="-70"/>
+        </edge>
+        <edge source="n44" target="n170" id="e44" type="input">
+          <point y="820" x="20"/>
+          <point y="820" x="100"/>
+        </edge>
+        <edge source="n46" target="n172" id="e45" type="input">
+          <point y="1040" x="260"/>
+          <point y="1040" x="170"/>
+        </edge>
+        <edge source="n46" target="n173" id="e46" type="input">
+          <point y="1040" x="260"/>
+          <point y="1040" x="340"/>
+        </edge>
+        <edge source="n170" target="n36" id="e47" type="equivalence">
+          <point y="820" x="100"/>
+          <point y="820" x="530"/>
+        </edge>
+        <edge source="n173" target="n36" id="e48" type="equivalence">
+          <point y="1040" x="340"/>
+          <point y="820" x="530"/>
+        </edge>
+        <edge source="n7" target="n9" id="e5" type="input">
+          <point y="380" x="410"/>
+          <point y="440" x="410"/>
+        </edge>
+        <edge source="n171" target="n26" id="e50" type="inclusion">
+          <point y="820" x="-70"/>
+          <point y="820" x="-210"/>
+          <point y="736" x="-210"/>
+        </edge>
+        <edge source="n55" target="n54" id="e54" type="input">
+          <point y="1050" x="530"/>
+          <point y="1110" x="530"/>
+        </edge>
+        <edge source="n55" target="n56" id="e55" type="input">
+          <point y="1050" x="530"/>
+          <point y="980" x="530"/>
+        </edge>
+        <edge source="n56" target="n36" id="e56" type="equivalence">
+          <point y="980" x="530"/>
+          <point y="820" x="530"/>
+        </edge>
+        <edge source="n54" target="n52" id="e57" type="equivalence">
+          <point y="1110" x="530"/>
+          <point y="1210" x="530"/>
+        </edge>
+        <edge source="n59" target="n57" id="e58" type="input">
+          <point y="1210" x="20"/>
+          <point y="1210" x="100"/>
+        </edge>
+        <edge source="n59" target="n58" id="e59" type="input">
+          <point y="1210" x="20"/>
+          <point y="1210" x="-70"/>
+        </edge>
+        <edge source="n1" target="n8" id="e6" type="equivalence">
+          <point y="240" x="410"/>
+          <point y="310" x="410"/>
+        </edge>
+        <edge source="n26" target="n58" id="e61" type="equivalence">
+          <point y="736" x="-260"/>
+          <point y="1210" x="-260"/>
+          <point y="1210" x="-70"/>
+        </edge>
+        <edge source="n60" target="n61" id="e62" type="input">
+          <point y="1360" x="530"/>
+          <point y="1420" x="530"/>
+        </edge>
+        <edge source="n60" target="n62" id="e63" type="input">
+          <point y="1360" x="530"/>
+          <point y="1290" x="530"/>
+        </edge>
+        <edge source="n62" target="n52" id="e64" type="equivalence">
+          <point y="1290" x="530"/>
+          <point y="1210" x="530"/>
+        </edge>
+        <edge source="n61" target="n53" id="e65" type="equivalence">
+          <point y="1420" x="530"/>
+          <point y="1500" x="530"/>
+        </edge>
+        <edge source="n66" target="n64" id="e66" type="input">
+          <point y="1500" x="-190"/>
+          <point y="1500" x="-110"/>
+        </edge>
+        <edge source="n66" target="n65" id="e67" type="input">
+          <point y="1500" x="-190"/>
+          <point y="1500" x="-280"/>
+        </edge>
+        <edge source="n26" target="n65" id="e70" type="equivalence">
+          <point y="736" x="-279"/>
+          <point y="1240" x="-280"/>
+          <point y="1500" x="-280"/>
+        </edge>
+        <edge source="n64" target="n63" id="e72" type="equivalence">
+          <point y="1500" x="-110"/>
+          <point y="1500" x="-10"/>
+        </edge>
+        <edge source="n9" target="n6" id="e73" type="equivalence">
+          <point y="440" x="410"/>
+          <point y="510" x="410"/>
+        </edge>
+        <edge source="n70" target="n26" id="e77" type="inclusion">
+          <point y="845" x="-230"/>
+          <point y="790" x="-230"/>
+          <point y="736" x="-230"/>
+        </edge>
+        <edge source="n11" target="n13" id="e8" type="input">
+          <point y="240" x="190"/>
+          <point y="240" x="100"/>
+        </edge>
+        <edge source="n11" target="n12" id="e9" type="input">
+          <point y="240" x="190"/>
+          <point y="240" x="270"/>
+        </edge>
+      </diagram>
+      <diagram width="5000" height="5000" name="patient">
+        <node color="#fcfcfc" id="n0" type="domain-restriction">
+          <geometry y="200" height="20" width="20" x="-150"/>
+          <label y="178" height="23" width="39" x="-150" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n1" type="range-restriction">
+          <geometry y="140" height="20" width="20" x="400"/>
+          <label y="140" height="23" width="39" x="365" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n11" type="attribute">
+          <geometry y="120" height="20" width="20" x="440"/>
+          <iri>ADCATERstart_day</iri>
+          <label y="98" height="23" width="60" x="440" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n12" type="role">
+          <geometry y="90" height="50" width="70" x="640"/>
+          <iri>ADCATERadmission_in_structure</iri>
+          <label y="130" height="23" width="134" x="640" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n13" type="attribute">
+          <geometry y="270" height="20" width="20" x="-220"/>
+          <iri>ADCATERAPI</iri>
+          <label y="250" height="23" width="29" x="-220" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n14" type="concept">
+          <geometry y="202" height="55" width="140" x="-40"/>
+          <iri>ADCATERNursing_Staff_Inquiries</iri>
+          <label y="200" height="23" width="134" x="-40" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n15" type="concept">
+          <geometry y="90" height="50" width="110" x="850"/>
+          <iri>ADCATERHospital</iri>
+          <label y="90" height="23" width="55" x="850" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n16" type="domain-restriction">
+          <geometry y="70" height="20" width="20" x="300"/>
+          <label y="48" height="23" width="39" x="300" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n17" type="domain-restriction">
+          <geometry y="270" height="20" width="20" x="70"/>
+          <label y="248" height="23" width="39" x="70" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n18" type="role">
+          <geometry y="70" height="50" width="70" x="400"/>
+          <iri>ADCATERadmitted_to</iri>
+          <label y="70" height="23" width="74" x="475" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n19" type="role">
+          <geometry y="270" height="50" width="70" x="170"/>
+          <iri>ADCATERpatient_takes_drug</iri>
+          <label y="240" height="23" width="111" x="170" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n2" type="attribute">
+          <geometry y="350" height="20" width="20" x="1020"/>
+          <iri>ADCATERnumber</iri>
+          <label y="350" height="23" width="51" x="1055" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n20" type="domain-restriction">
+          <geometry y="340" height="20" width="20" x="290"/>
+          <label y="325" height="23" width="39" x="290" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n21" type="range-restriction">
+          <geometry y="270" height="20" width="20" x="270"/>
+          <label y="248" height="23" width="39" x="270" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n22" type="domain-restriction">
+          <geometry y="270" height="20" width="20" x="-150"/>
+          <label y="248" height="23" width="39" x="-150" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n23" type="concept">
+          <geometry y="340" height="50" width="110" x="390"/>
+          <iri>ADCATERFinished</iri>
+          <label y="340" height="23" width="55" x="390" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n24" type="attribute">
+          <geometry y="200" height="20" width="20" x="-220"/>
+          <iri>ADCATERdate</iri>
+          <label y="180" height="23" width="34" x="-220" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n25" type="role">
+          <geometry y="240" height="50" width="70" x="850"/>
+          <iri>ADCATERbelongs_to</iri>
+          <label y="240" height="23" width="69" x="930" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n26" type="domain-restriction">
+          <geometry y="300" height="20" width="20" x="850"/>
+          <label y="295" height="23" width="39" x="880" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n27" type="attribute">
+          <geometry y="90" height="20" width="20" x="1010"/>
+          <iri>ADCATERname</iri>
+          <label y="68" height="23" width="40" x="1010" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n28" type="domain-restriction">
+          <geometry y="400" height="20" width="20" x="970"/>
+          <label y="378" height="23" width="39" x="970" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n3" type="role">
+          <geometry y="200" height="50" width="70" x="170"/>
+          <iri>ADCATERtakes</iri>
+          <label y="170" height="23" width="39" x="170" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n30" type="domain-restriction">
+          <geometry y="160" height="20" width="20" x="440"/>
+          <label y="160" height="23" width="39" x="470" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n31" type="domain-restriction">
+          <geometry y="90" height="20" width="20" x="950"/>
+          <label y="110" height="23" width="39" x="950" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n32" type="domain-restriction">
+          <geometry y="200" height="20" width="20" x="70"/>
+          <label y="178" height="23" width="39" x="70" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n33" type="concept">
+          <geometry y="70" height="50" width="110" x="180"/>
+          <iri>ADCATERPatient</iri>
+          <label y="70" height="23" width="48" x="180" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n34" type="attribute">
+          <geometry y="340" height="20" width="20" x="250"/>
+          <iri>ADCATERend_day</iri>
+          <label y="340" height="23" width="54" x="210" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n35" type="range-restriction">
+          <geometry y="180" height="20" width="20" x="850"/>
+          <label y="180" height="23" width="39" x="885" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n36" type="attribute">
+          <geometry y="400" height="20" width="20" x="1020"/>
+          <iri>ADCATERward</iri>
+          <label y="400" height="23" width="37" x="1050" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n38" type="domain-restriction">
+          <geometry y="70" height="20" width="20" x="80"/>
+          <label y="50" height="23" width="39" x="80" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n39" type="concept">
+          <geometry y="270" height="50" width="110" x="-40"/>
+          <iri>ADCATERdrug</iri>
+          <label y="270" height="23" width="35" x="-40" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n40" type="concept">
+          <geometry y="230" height="50" width="110" x="400"/>
+          <iri>ADCATERHospitalization</iri>
+          <label y="230" height="23" width="91" x="400" size="12" customSize="0"/>
+        </node>
+        <node color="#000000" id="n45" type="range-restriction">
+          <geometry y="90" height="20" width="20" x="710"/>
+          <label y="68" height="23" width="39" x="710" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n46" type="domain-restriction">
+          <geometry y="90" height="20" width="20" x="560"/>
+          <label y="68" height="23" width="39" x="560" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n47" type="range-restriction">
+          <geometry y="380" height="20" width="20" x="720"/>
+          <label y="358" height="23" width="39" x="720" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n48" type="domain-restriction">
+          <geometry y="380" height="20" width="20" x="580"/>
+          <label y="400" height="23" width="39" x="580" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#fcfcfc" id="n5" type="role">
+          <geometry y="380" height="50" width="70" x="650"/>
+          <iri>ADCATERin_room</iri>
+          <label y="345" height="23" width="53" x="645" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n6" type="attribute">
+          <geometry y="70" height="20" width="20" x="30"/>
+          <iri>ADCATERgender</iri>
+          <label y="48" height="23" width="47" x="30" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n7" type="concept">
+          <geometry y="380" height="50" width="110" x="850"/>
+          <iri>ADCATERRoom</iri>
+          <label y="380" height="23" width="42" x="850" size="12" customSize="0"/>
+        </node>
+        <node color="#fcfcfc" id="n8" type="domain-restriction">
+          <geometry y="350" height="20" width="20" x="970"/>
+          <label y="328" height="23" width="39" x="970" size="12" customSize="0">exists</label>
+        </node>
+        <node color="#000000" id="n9" type="range-restriction">
+          <geometry y="200" height="20" width="20" x="270"/>
+          <label y="178" height="23" width="39" x="270" size="12" customSize="0">exists</label>
+        </node>
+        <edge source="n24" target="n0" id="e0" type="input">
+          <point y="200" x="-220"/>
+          <point y="200" x="-150"/>
+        </edge>
+        <edge source="n5" target="n48" id="e10" type="input">
+          <point y="380" x="650"/>
+          <point y="380" x="580"/>
+        </edge>
+        <edge source="n6" target="n38" id="e11" type="input">
+          <point y="70" x="30"/>
+          <point y="70" x="80"/>
+        </edge>
+        <edge source="n7" target="n47" id="e12" type="equivalence">
+          <point y="380" x="850"/>
+          <point y="380" x="720"/>
+        </edge>
+        <edge source="n7" target="n8" id="e13" type="equivalence">
+          <point y="380" x="850"/>
+          <point y="350" x="970"/>
+        </edge>
+        <edge source="n26" target="n7" id="e14" type="equivalence">
+          <point y="300" x="850"/>
+          <point y="380" x="850"/>
+        </edge>
+        <edge source="n7" target="n28" id="e15" type="equivalence">
+          <point y="380" x="850"/>
+          <point y="400" x="970"/>
+        </edge>
+        <edge source="n11" target="n30" id="e17" type="input">
+          <point y="120" x="440"/>
+          <point y="160" x="440"/>
+        </edge>
+        <edge source="n12" target="n45" id="e18" type="input">
+          <point y="90" x="640"/>
+          <point y="90" x="710"/>
+        </edge>
+        <edge source="n13" target="n22" id="e19" type="input">
+          <point y="270" x="-220"/>
+          <point y="270" x="-150"/>
+        </edge>
+        <edge source="n18" target="n1" id="e2" type="input">
+          <point y="70" x="400"/>
+          <point y="140" x="400"/>
+        </edge>
+        <edge source="n32" target="n14" id="e20" type="equivalence">
+          <point y="200" x="70"/>
+          <point y="202" x="-40"/>
+        </edge>
+        <edge source="n31" target="n15" id="e21" type="equivalence">
+          <point y="90" x="950"/>
+          <point y="90" x="904"/>
+        </edge>
+        <edge source="n15" target="n35" id="e22" type="equivalence">
+          <point y="90" x="850"/>
+          <point y="180" x="850"/>
+        </edge>
+        <edge source="n45" target="n15" id="e23" type="equivalence">
+          <point y="90" x="710"/>
+          <point y="90" x="850"/>
+        </edge>
+        <edge source="n18" target="n16" id="e24" type="input">
+          <point y="70" x="400"/>
+          <point y="70" x="300"/>
+        </edge>
+        <edge source="n33" target="n16" id="e25" type="equivalence">
+          <point y="70" x="180"/>
+          <point y="70" x="300"/>
+        </edge>
+        <edge source="n17" target="n39" id="e26" type="equivalence">
+          <point y="270" x="70"/>
+          <point y="270" x="-40"/>
+        </edge>
+        <edge source="n19" target="n17" id="e27" type="input">
+          <point y="270" x="170"/>
+          <point y="270" x="70"/>
+        </edge>
+        <edge source="n19" target="n21" id="e28" type="input">
+          <point y="270" x="170"/>
+          <point y="270" x="270"/>
+        </edge>
+        <edge source="n20" target="n23" id="e29" type="equivalence">
+          <point y="340" x="290"/>
+          <point y="340" x="390"/>
+        </edge>
+        <edge source="n1" target="n40" id="e3" type="equivalence">
+          <point y="140" x="400"/>
+          <point y="230" x="400"/>
+        </edge>
+        <edge source="n34" target="n20" id="e30" type="input">
+          <point y="340" x="250"/>
+          <point y="340" x="290"/>
+        </edge>
+        <edge source="n39" target="n22" id="e32" type="equivalence">
+          <point y="270" x="-40"/>
+          <point y="270" x="-150"/>
+        </edge>
+        <edge source="n23" target="n40" id="e33" type="inclusion">
+          <point y="340" x="390"/>
+          <point y="254" x="390"/>
+        </edge>
+        <edge source="n25" target="n26" id="e34" type="input">
+          <point y="240" x="850"/>
+          <point y="300" x="850"/>
+        </edge>
+        <edge source="n25" target="n35" id="e35" type="input">
+          <point y="240" x="850"/>
+          <point y="180" x="850"/>
+        </edge>
+        <edge source="n27" target="n31" id="e36" type="input">
+          <point y="90" x="1010"/>
+          <point y="90" x="950"/>
+        </edge>
+        <edge source="n36" target="n28" id="e37" type="input">
+          <point y="400" x="1020"/>
+          <point y="400" x="970"/>
+        </edge>
+        <edge source="n30" target="n40" id="e38" type="equivalence">
+          <point y="160" x="440"/>
+          <point y="205" x="440"/>
+        </edge>
+        <edge source="n38" target="n33" id="e39" type="equivalence">
+          <point y="70" x="80"/>
+          <point y="70" x="125"/>
+        </edge>
+        <edge source="n2" target="n8" id="e4" type="input">
+          <point y="350" x="1020"/>
+          <point y="350" x="970"/>
+        </edge>
+        <edge source="n9" target="n40" id="e41" type="equivalence">
+          <point y="200" x="270"/>
+          <point y="230" x="400"/>
+        </edge>
+        <edge source="n21" target="n40" id="e42" type="equivalence">
+          <point y="270" x="270"/>
+          <point y="230" x="400"/>
+        </edge>
+        <edge source="n40" target="n48" id="e44" type="equivalence">
+          <point y="236" x="454"/>
+          <point y="380" x="580"/>
+        </edge>
+        <edge source="n40" target="n46" id="e45" type="equivalence">
+          <point y="224" x="454"/>
+          <point y="90" x="560"/>
+        </edge>
+        <edge source="n3" target="n32" id="e5" type="input">
+          <point y="200" x="170"/>
+          <point y="200" x="70"/>
+        </edge>
+        <edge source="n14" target="n0" id="e50" type="inclusion">
+          <point y="202" x="-40"/>
+          <point y="200" x="-150"/>
+        </edge>
+        <edge source="n3" target="n9" id="e6" type="input">
+          <point y="200" x="170"/>
+          <point y="200" x="270"/>
+        </edge>
+        <edge source="n12" target="n46" id="e8" type="input">
+          <point y="90" x="640"/>
+          <point y="90" x="560"/>
+        </edge>
+        <edge source="n5" target="n47" id="e9" type="input">
+          <point y="380" x="650"/>
+          <point y="380" x="720"/>
+        </edge>
+      </diagram>
+    </diagrams>
+  </project>
+</graphol>
